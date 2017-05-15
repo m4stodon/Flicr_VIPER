@@ -1,0 +1,29 @@
+PODS:
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - Realm (2.5.0):
+    - Realm/Headers (= 2.5.0)
+  - Realm/Headers (2.5.0)
+  - Typhoon (4.0.2):
+    - Typhoon/DeallocNotifier (= 4.0.2)
+    - Typhoon/IntrospectionUtils (= 4.0.2)
+    - Typhoon/no-arc (= 4.0.2)
+  - Typhoon/DeallocNotifier (4.0.2)
+  - Typhoon/IntrospectionUtils (4.0.2)
+  - Typhoon/no-arc (4.0.2):
+    - Typhoon/IntrospectionUtils
+
+DEPENDENCIES:
+  - FMDB
+  - Realm
+  - Typhoon
+
+SPEC CHECKSUMS:
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  Realm: 62abce501668580092d2be9b6ba7324a3d5f906a
+  Typhoon: 05db9d33d798b90c202bf3f754275c03efe93297
+
+PODFILE CHECKSUM: 50a77f94d5815e2bf27c7ae6042c9254421826d5
+
+COCOAPODS: 1.2.0.beta.3

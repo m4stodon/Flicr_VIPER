@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>FMDB.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-FlickrViper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Realm.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Typhoon.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>134D135E2A31AFCD231DD809CC5399EE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>251BAD17812F7EBF6532EACF66F941C3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AEF208A27F1C98EB4F3BD9A24604ED19</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EE95A0F514223264CB20897D64906A22</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
