@@ -8,54 +8,102 @@
 
 /* Begin PBXBuildFile section */
 		B90B6B29DD5620CE7F6F4AEA /* Pods_FlickrViper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D0C8B4501FF85FA0A828E7 /* Pods_FlickrViper.framework */; };
+		E5328F5A1F1612C20033A8EB /* TabEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = E5328F591F1612C20033A8EB /* TabEntity.m */; };
+		E5328F761F161F840033A8EB /* PhotoCollectionModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = E5328F601F161F840033A8EB /* PhotoCollectionModuleAssembly.m */; };
+		E5328F771F161F840033A8EB /* PhotoCollectionModuleInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = E5328F641F161F840033A8EB /* PhotoCollectionModuleInteractor.m */; };
+		E5328F781F161F840033A8EB /* PhotoCollectionModulePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E5328F671F161F840033A8EB /* PhotoCollectionModulePresenter.m */; };
+		E5328F791F161F840033A8EB /* PhotoCollectionModuleRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = E5328F721F161F840033A8EB /* PhotoCollectionModuleRouter.m */; };
+		E5328F7A1F161F840033A8EB /* PhotoCollectionModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5328F751F161F840033A8EB /* PhotoCollectionModuleViewController.m */; };
+		E54FBB291F1387DD0052F6CE /* FVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E54FBB231F1387DD0052F6CE /* FVAppDelegate.m */; };
+		E54FBB2A1F1387DD0052F6CE /* FVApplicationAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = E54FBB251F1387DD0052F6CE /* FVApplicationAssembly.m */; };
+		E54FBB721F1387E30052F6CE /* TabBarModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = E54FBB531F1387E30052F6CE /* TabBarModuleAssembly.m */; };
+		E54FBB731F1387E30052F6CE /* TabBarModuleInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = E54FBB581F1387E30052F6CE /* TabBarModuleInteractor.m */; };
+		E54FBB741F1387E30052F6CE /* TabBarModulePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E54FBB5B1F1387E30052F6CE /* TabBarModulePresenter.m */; };
+		E54FBB751F1387E30052F6CE /* TabBarModuleRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = E54FBB661F1387E30052F6CE /* TabBarModuleRouter.m */; };
+		E54FBB761F1387E30052F6CE /* TabBarModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E54FBB691F1387E30052F6CE /* TabBarModuleViewController.m */; };
+		E54FBB7A1F1399B00052F6CE /* ModuleFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E54FBB791F1399B00052F6CE /* ModuleFactory.m */; };
 		E5819B8C1EC9A24E00B5B33F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5819B8B1EC9A24E00B5B33F /* main.m */; };
-		E5819B8F1EC9A24E00B5B33F /* FVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5819B8E1EC9A24E00B5B33F /* FVAppDelegate.m */; };
-		E5819BA41EC9A65500B5B33F /* FVApplicationAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = E5819BA31EC9A65500B5B33F /* FVApplicationAssembly.m */; };
-		E5819BB61EC9B2CA00B5B33F /* FVStartUpConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = E5819BAA1EC9B2CA00B5B33F /* FVStartUpConfigurator.m */; };
 		E5819BB71EC9B2CA00B5B33F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5819BAD1EC9B2CA00B5B33F /* Assets.xcassets */; };
 		E5819BB81EC9B2CA00B5B33F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5819BAF1EC9B2CA00B5B33F /* LaunchScreen.storyboard */; };
 		E5819BB91EC9B2CA00B5B33F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5819BB11EC9B2CA00B5B33F /* Main.storyboard */; };
-		E5819BD31EC9D73400B5B33F /* TabBarModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = E5819BD21EC9D73400B5B33F /* TabBarModuleAssembly.m */; };
-		E5819BD61EC9D75E00B5B33F /* TabBarInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = E5819BD51EC9D75E00B5B33F /* TabBarInteractor.m */; };
-		E5819BD91EC9D77200B5B33F /* TabBarPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E5819BD81EC9D77200B5B33F /* TabBarPresenter.m */; };
-		E5819BDC1EC9D78000B5B33F /* TabBarRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = E5819BDB1EC9D78000B5B33F /* TabBarRouter.m */; };
-		E5819BDF1EC9D79500B5B33F /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5819BDE1EC9D79500B5B33F /* TabBarViewController.m */; };
+		E5B9527B1F151B1E00081C83 /* AuthorizationModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B952641F151B1E00081C83 /* AuthorizationModuleAssembly.m */; };
+		E5B9527C1F151B1E00081C83 /* AuthorizationModuleInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B952691F151B1E00081C83 /* AuthorizationModuleInteractor.m */; };
+		E5B9527D1F151B1E00081C83 /* AuthorizationModulePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B9526C1F151B1E00081C83 /* AuthorizationModulePresenter.m */; };
+		E5B9527E1F151B1E00081C83 /* AuthorizationModuleRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B952771F151B1E00081C83 /* AuthorizationModuleRouter.m */; };
+		E5B9527F1F151B1E00081C83 /* AuthorizationModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B9527A1F151B1E00081C83 /* AuthorizationModuleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		80D0C8B4501FF85FA0A828E7 /* Pods_FlickrViper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlickrViper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B98AE677D153303B28DCFD6 /* Pods-FlickrViper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickrViper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlickrViper/Pods-FlickrViper.debug.xcconfig"; sourceTree = "<group>"; };
 		B8F2EC9A2E46F3D10CBCC779 /* Pods-FlickrViper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickrViper.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlickrViper/Pods-FlickrViper.release.xcconfig"; sourceTree = "<group>"; };
+		E5328F591F1612C20033A8EB /* TabEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabEntity.m; sourceTree = "<group>"; };
+		E5328F5F1F161F840033A8EB /* PhotoCollectionModuleAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PhotoCollectionModuleAssembly.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E5328F601F161F840033A8EB /* PhotoCollectionModuleAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PhotoCollectionModuleAssembly.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		E5328F631F161F840033A8EB /* PhotoCollectionModuleInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PhotoCollectionModuleInteractor.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E5328F641F161F840033A8EB /* PhotoCollectionModuleInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PhotoCollectionModuleInteractor.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		E5328F661F161F840033A8EB /* PhotoCollectionModulePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PhotoCollectionModulePresenter.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E5328F671F161F840033A8EB /* PhotoCollectionModulePresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PhotoCollectionModulePresenter.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		E5328F691F161F840033A8EB /* PhotoCollectionModuleInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PhotoCollectionModuleInput.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E5328F6A1F161F840033A8EB /* PhotoCollectionModuleInteractorInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PhotoCollectionModuleInteractorInput.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E5328F6B1F161F840033A8EB /* PhotoCollectionModuleInteractorOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PhotoCollectionModuleInteractorOutput.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E5328F6C1F161F840033A8EB /* PhotoCollectionModuleOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PhotoCollectionModuleOutput.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E5328F6D1F161F840033A8EB /* PhotoCollectionModuleRouterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PhotoCollectionModuleRouterInput.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E5328F6E1F161F840033A8EB /* PhotoCollectionModuleViewInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PhotoCollectionModuleViewInput.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E5328F6F1F161F840033A8EB /* PhotoCollectionModuleViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PhotoCollectionModuleViewOutput.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E5328F711F161F840033A8EB /* PhotoCollectionModuleRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PhotoCollectionModuleRouter.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E5328F721F161F840033A8EB /* PhotoCollectionModuleRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PhotoCollectionModuleRouter.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		E5328F741F161F840033A8EB /* PhotoCollectionModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PhotoCollectionModuleViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E5328F751F161F840033A8EB /* PhotoCollectionModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PhotoCollectionModuleViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		E54FBB221F1387DD0052F6CE /* FVAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FVAppDelegate.h; sourceTree = "<group>"; };
+		E54FBB231F1387DD0052F6CE /* FVAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FVAppDelegate.m; sourceTree = "<group>"; };
+		E54FBB241F1387DD0052F6CE /* FVApplicationAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FVApplicationAssembly.h; sourceTree = "<group>"; };
+		E54FBB251F1387DD0052F6CE /* FVApplicationAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FVApplicationAssembly.m; sourceTree = "<group>"; };
+		E54FBB281F1387DD0052F6CE /* FlickrViperTransitionHandlerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrViperTransitionHandlerProtocol.h; sourceTree = "<group>"; };
+		E54FBB521F1387E30052F6CE /* TabBarModuleAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarModuleAssembly.h; sourceTree = "<group>"; };
+		E54FBB531F1387E30052F6CE /* TabBarModuleAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarModuleAssembly.m; sourceTree = "<group>"; };
+		E54FBB551F1387E30052F6CE /* TabEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabEntity.h; sourceTree = "<group>"; };
+		E54FBB571F1387E30052F6CE /* TabBarModuleInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarModuleInteractor.h; sourceTree = "<group>"; };
+		E54FBB581F1387E30052F6CE /* TabBarModuleInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarModuleInteractor.m; sourceTree = "<group>"; };
+		E54FBB5A1F1387E30052F6CE /* TabBarModulePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarModulePresenter.h; sourceTree = "<group>"; };
+		E54FBB5B1F1387E30052F6CE /* TabBarModulePresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarModulePresenter.m; sourceTree = "<group>"; };
+		E54FBB5D1F1387E30052F6CE /* TabBarModuleInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarModuleInput.h; sourceTree = "<group>"; };
+		E54FBB5E1F1387E30052F6CE /* TabBarModuleInteractorInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarModuleInteractorInput.h; sourceTree = "<group>"; };
+		E54FBB5F1F1387E30052F6CE /* TabBarModuleInteractorOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarModuleInteractorOutput.h; sourceTree = "<group>"; };
+		E54FBB601F1387E30052F6CE /* TabBarModuleOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarModuleOutput.h; sourceTree = "<group>"; };
+		E54FBB611F1387E30052F6CE /* TabBarModuleRouterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarModuleRouterInput.h; sourceTree = "<group>"; };
+		E54FBB621F1387E30052F6CE /* TabBarModuleViewInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarModuleViewInput.h; sourceTree = "<group>"; };
+		E54FBB631F1387E30052F6CE /* TabBarModuleViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarModuleViewOutput.h; sourceTree = "<group>"; };
+		E54FBB651F1387E30052F6CE /* TabBarModuleRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarModuleRouter.h; sourceTree = "<group>"; };
+		E54FBB661F1387E30052F6CE /* TabBarModuleRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarModuleRouter.m; sourceTree = "<group>"; };
+		E54FBB681F1387E30052F6CE /* TabBarModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarModuleViewController.h; sourceTree = "<group>"; };
+		E54FBB691F1387E30052F6CE /* TabBarModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarModuleViewController.m; sourceTree = "<group>"; };
+		E54FBB771F13885B0052F6CE /* ModuleFactoryProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleFactoryProtocol.h; sourceTree = "<group>"; };
+		E54FBB781F1399B00052F6CE /* ModuleFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleFactory.h; sourceTree = "<group>"; };
+		E54FBB791F1399B00052F6CE /* ModuleFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleFactory.m; sourceTree = "<group>"; };
 		E5819B871EC9A24E00B5B33F /* FlickrViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5819B8B1EC9A24E00B5B33F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E5819B8D1EC9A24E00B5B33F /* FVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FVAppDelegate.h; sourceTree = "<group>"; };
-		E5819B8E1EC9A24E00B5B33F /* FVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FVAppDelegate.m; sourceTree = "<group>"; };
-		E5819BA21EC9A48000B5B33F /* FVApplicationAssembly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FVApplicationAssembly.h; sourceTree = "<group>"; };
-		E5819BA31EC9A65500B5B33F /* FVApplicationAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FVApplicationAssembly.m; sourceTree = "<group>"; };
-		E5819BA91EC9B2CA00B5B33F /* FVStartUpConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FVStartUpConfigurator.h; sourceTree = "<group>"; };
-		E5819BAA1EC9B2CA00B5B33F /* FVStartUpConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FVStartUpConfigurator.m; sourceTree = "<group>"; };
 		E5819BAD1EC9B2CA00B5B33F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5819BB01EC9B2CA00B5B33F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5819BB21EC9B2CA00B5B33F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E5819BBC1EC9B30400B5B33F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E5819BBE1EC9B33E00B5B33F /* FVStartUpConfiguratorDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FVStartUpConfiguratorDelegate.h; sourceTree = "<group>"; };
-		E5819BD11EC9D73400B5B33F /* TabBarModuleAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarModuleAssembly.h; sourceTree = "<group>"; };
-		E5819BD21EC9D73400B5B33F /* TabBarModuleAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarModuleAssembly.m; sourceTree = "<group>"; };
-		E5819BD41EC9D75E00B5B33F /* TabBarInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarInteractor.h; sourceTree = "<group>"; };
-		E5819BD51EC9D75E00B5B33F /* TabBarInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarInteractor.m; sourceTree = "<group>"; };
-		E5819BD71EC9D77200B5B33F /* TabBarPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarPresenter.h; sourceTree = "<group>"; };
-		E5819BD81EC9D77200B5B33F /* TabBarPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarPresenter.m; sourceTree = "<group>"; };
-		E5819BDA1EC9D78000B5B33F /* TabBarRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarRouter.h; sourceTree = "<group>"; };
-		E5819BDB1EC9D78000B5B33F /* TabBarRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarRouter.m; sourceTree = "<group>"; };
-		E5819BDD1EC9D79500B5B33F /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
-		E5819BDE1EC9D79500B5B33F /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
-		E5819BE01EC9D7C600B5B33F /* TabBarViewInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarViewInput.h; sourceTree = "<group>"; };
-		E5819BE11EC9D7EF00B5B33F /* TabBarRouterInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarRouterInput.h; sourceTree = "<group>"; };
-		E5819BE21EC9D80700B5B33F /* TabBarInteractorInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarInteractorInput.h; sourceTree = "<group>"; };
-		E5819BE31EC9D85B00B5B33F /* TabBarInteractorOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TabBarInteractorOutput.h; path = ../Presenter/TabBarInteractorOutput.h; sourceTree = "<group>"; };
-		E5819BE41EC9D87100B5B33F /* TabBarViewOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TabBarViewOutput.h; path = ../Presenter/TabBarViewOutput.h; sourceTree = "<group>"; };
-		E5819BE51EC9D89200B5B33F /* TabBarModuleInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TabBarModuleInput.h; path = Presenter/TabBarModuleInput.h; sourceTree = "<group>"; };
-		E5819BE61EC9E12D00B5B33F /* TabBarModuleOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarModuleOutput.h; sourceTree = "<group>"; };
+		E5B952631F151B1E00081C83 /* AuthorizationModuleAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AuthorizationModuleAssembly.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E5B952641F151B1E00081C83 /* AuthorizationModuleAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AuthorizationModuleAssembly.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		E5B952681F151B1E00081C83 /* AuthorizationModuleInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AuthorizationModuleInteractor.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E5B952691F151B1E00081C83 /* AuthorizationModuleInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AuthorizationModuleInteractor.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		E5B9526B1F151B1E00081C83 /* AuthorizationModulePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AuthorizationModulePresenter.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E5B9526C1F151B1E00081C83 /* AuthorizationModulePresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AuthorizationModulePresenter.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		E5B9526E1F151B1E00081C83 /* AuthorizationModuleInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AuthorizationModuleInput.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E5B9526F1F151B1E00081C83 /* AuthorizationModuleInteractorInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AuthorizationModuleInteractorInput.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E5B952701F151B1E00081C83 /* AuthorizationModuleInteractorOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AuthorizationModuleInteractorOutput.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E5B952711F151B1E00081C83 /* AuthorizationModuleOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AuthorizationModuleOutput.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E5B952721F151B1E00081C83 /* AuthorizationModuleRouterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AuthorizationModuleRouterInput.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E5B952731F151B1E00081C83 /* AuthorizationModuleViewInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AuthorizationModuleViewInput.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E5B952741F151B1E00081C83 /* AuthorizationModuleViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AuthorizationModuleViewOutput.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E5B952761F151B1E00081C83 /* AuthorizationModuleRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AuthorizationModuleRouter.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E5B952771F151B1E00081C83 /* AuthorizationModuleRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AuthorizationModuleRouter.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		E5B952791F151B1E00081C83 /* AuthorizationModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AuthorizationModuleViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E5B9527A1F151B1E00081C83 /* AuthorizationModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AuthorizationModuleViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +135,239 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E5328F5D1F161F840033A8EB /* PhotoCollection */ = {
+			isa = PBXGroup;
+			children = (
+				E5328F5E1F161F840033A8EB /* Assembly */,
+				E5328F611F161F840033A8EB /* Entities */,
+				E5328F621F161F840033A8EB /* Interactor */,
+				E5328F651F161F840033A8EB /* Presenter */,
+				E5328F701F161F840033A8EB /* Router */,
+				E5328F731F161F840033A8EB /* View */,
+				E5328F681F161F840033A8EB /* Protocols */,
+			);
+			path = PhotoCollection;
+			sourceTree = "<group>";
+		};
+		E5328F5E1F161F840033A8EB /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				E5328F5F1F161F840033A8EB /* PhotoCollectionModuleAssembly.h */,
+				E5328F601F161F840033A8EB /* PhotoCollectionModuleAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		E5328F611F161F840033A8EB /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		E5328F621F161F840033A8EB /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E5328F631F161F840033A8EB /* PhotoCollectionModuleInteractor.h */,
+				E5328F641F161F840033A8EB /* PhotoCollectionModuleInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E5328F651F161F840033A8EB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E5328F661F161F840033A8EB /* PhotoCollectionModulePresenter.h */,
+				E5328F671F161F840033A8EB /* PhotoCollectionModulePresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E5328F681F161F840033A8EB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E5328F691F161F840033A8EB /* PhotoCollectionModuleInput.h */,
+				E5328F6A1F161F840033A8EB /* PhotoCollectionModuleInteractorInput.h */,
+				E5328F6B1F161F840033A8EB /* PhotoCollectionModuleInteractorOutput.h */,
+				E5328F6C1F161F840033A8EB /* PhotoCollectionModuleOutput.h */,
+				E5328F6D1F161F840033A8EB /* PhotoCollectionModuleRouterInput.h */,
+				E5328F6E1F161F840033A8EB /* PhotoCollectionModuleViewInput.h */,
+				E5328F6F1F161F840033A8EB /* PhotoCollectionModuleViewOutput.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E5328F701F161F840033A8EB /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E5328F711F161F840033A8EB /* PhotoCollectionModuleRouter.h */,
+				E5328F721F161F840033A8EB /* PhotoCollectionModuleRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E5328F731F161F840033A8EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E5328F741F161F840033A8EB /* PhotoCollectionModuleViewController.h */,
+				E5328F751F161F840033A8EB /* PhotoCollectionModuleViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E54FBB201F1387DD0052F6CE /* ApplicationAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				E54FBB241F1387DD0052F6CE /* FVApplicationAssembly.h */,
+				E54FBB251F1387DD0052F6CE /* FVApplicationAssembly.m */,
+				E54FBB211F1387DD0052F6CE /* AppDelegate */,
+				E54FBB261F1387DD0052F6CE /* ModuleFactory */,
+				E54FBB271F1387DD0052F6CE /* Protocols */,
+			);
+			path = ApplicationAssembly;
+			sourceTree = "<group>";
+		};
+		E54FBB211F1387DD0052F6CE /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				E54FBB221F1387DD0052F6CE /* FVAppDelegate.h */,
+				E54FBB231F1387DD0052F6CE /* FVAppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		E54FBB261F1387DD0052F6CE /* ModuleFactory */ = {
+			isa = PBXGroup;
+			children = (
+				E54FBB781F1399B00052F6CE /* ModuleFactory.h */,
+				E54FBB791F1399B00052F6CE /* ModuleFactory.m */,
+			);
+			path = ModuleFactory;
+			sourceTree = "<group>";
+		};
+		E54FBB271F1387DD0052F6CE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E54FBB281F1387DD0052F6CE /* FlickrViperTransitionHandlerProtocol.h */,
+				E54FBB771F13885B0052F6CE /* ModuleFactoryProtocol.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E54FBB2B1F1387E30052F6CE /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E54FBB2C1F1387E30052F6CE /* Authorization */,
+				E5328F5D1F161F840033A8EB /* PhotoCollection */,
+				E54FBB4F1F1387E30052F6CE /* Settings */,
+				E54FBB501F1387E30052F6CE /* TabBar */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E54FBB2C1F1387E30052F6CE /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				E5B952621F151B1E00081C83 /* Assembly */,
+				E5B952651F151B1E00081C83 /* Entities */,
+				E5B952671F151B1E00081C83 /* Interactor */,
+				E5B9526A1F151B1E00081C83 /* Presenter */,
+				E5B9526D1F151B1E00081C83 /* Protocols */,
+				E5B952751F151B1E00081C83 /* Router */,
+				E5B952781F151B1E00081C83 /* View */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		E54FBB4F1F1387E30052F6CE /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		E54FBB501F1387E30052F6CE /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				E54FBB511F1387E30052F6CE /* Assembly */,
+				E54FBB541F1387E30052F6CE /* Entities */,
+				E54FBB561F1387E30052F6CE /* Interactor */,
+				E54FBB591F1387E30052F6CE /* Presenter */,
+				E54FBB5C1F1387E30052F6CE /* Protocols */,
+				E54FBB641F1387E30052F6CE /* Router */,
+				E54FBB671F1387E30052F6CE /* View */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		E54FBB511F1387E30052F6CE /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				E54FBB521F1387E30052F6CE /* TabBarModuleAssembly.h */,
+				E54FBB531F1387E30052F6CE /* TabBarModuleAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		E54FBB541F1387E30052F6CE /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				E54FBB551F1387E30052F6CE /* TabEntity.h */,
+				E5328F591F1612C20033A8EB /* TabEntity.m */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		E54FBB561F1387E30052F6CE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E54FBB571F1387E30052F6CE /* TabBarModuleInteractor.h */,
+				E54FBB581F1387E30052F6CE /* TabBarModuleInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E54FBB591F1387E30052F6CE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E54FBB5A1F1387E30052F6CE /* TabBarModulePresenter.h */,
+				E54FBB5B1F1387E30052F6CE /* TabBarModulePresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E54FBB5C1F1387E30052F6CE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E54FBB5D1F1387E30052F6CE /* TabBarModuleInput.h */,
+				E54FBB601F1387E30052F6CE /* TabBarModuleOutput.h */,
+				E54FBB5E1F1387E30052F6CE /* TabBarModuleInteractorInput.h */,
+				E54FBB5F1F1387E30052F6CE /* TabBarModuleInteractorOutput.h */,
+				E54FBB611F1387E30052F6CE /* TabBarModuleRouterInput.h */,
+				E54FBB621F1387E30052F6CE /* TabBarModuleViewInput.h */,
+				E54FBB631F1387E30052F6CE /* TabBarModuleViewOutput.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E54FBB641F1387E30052F6CE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E54FBB651F1387E30052F6CE /* TabBarModuleRouter.h */,
+				E54FBB661F1387E30052F6CE /* TabBarModuleRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E54FBB671F1387E30052F6CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E54FBB681F1387E30052F6CE /* TabBarModuleViewController.h */,
+				E54FBB691F1387E30052F6CE /* TabBarModuleViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E5819B7E1EC9A24E00B5B33F = {
 			isa = PBXGroup;
 			children = (
@@ -108,12 +389,8 @@
 		E5819B891EC9A24E00B5B33F /* FlickrViper */ = {
 			isa = PBXGroup;
 			children = (
-				E5819B8D1EC9A24E00B5B33F /* FVAppDelegate.h */,
-				E5819B8E1EC9A24E00B5B33F /* FVAppDelegate.m */,
-				E5819BA11EC9A46200B5B33F /* Typhoon */,
-				E5819BA81EC9B2CA00B5B33F /* Configurator */,
-				E5819BAB1EC9B2CA00B5B33F /* Modules */,
-				E5819BC41EC9C19D00B5B33F /* Managers */,
+				E54FBB201F1387DD0052F6CE /* ApplicationAssembly */,
+				E54FBB2B1F1387E30052F6CE /* Modules */,
 				E5819BAC1EC9B2CA00B5B33F /* Resources */,
 				E5819BAE1EC9B2CA00B5B33F /* Storyboards */,
 				E5819B8A1EC9A24E00B5B33F /* Supporting Files */,
@@ -128,38 +405,6 @@
 				E5819B8B1EC9A24E00B5B33F /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E5819BA11EC9A46200B5B33F /* Typhoon */ = {
-			isa = PBXGroup;
-			children = (
-				E5819BA21EC9A48000B5B33F /* FVApplicationAssembly.h */,
-				E5819BA31EC9A65500B5B33F /* FVApplicationAssembly.m */,
-			);
-			path = Typhoon;
-			sourceTree = "<group>";
-		};
-		E5819BA81EC9B2CA00B5B33F /* Configurator */ = {
-			isa = PBXGroup;
-			children = (
-				E5819BBE1EC9B33E00B5B33F /* FVStartUpConfiguratorDelegate.h */,
-				E5819BA91EC9B2CA00B5B33F /* FVStartUpConfigurator.h */,
-				E5819BAA1EC9B2CA00B5B33F /* FVStartUpConfigurator.m */,
-			);
-			path = Configurator;
-			sourceTree = "<group>";
-		};
-		E5819BAB1EC9B2CA00B5B33F /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				E5819BCB1EC9C22F00B5B33F /* TabBar */,
-				E5819BBF1EC9C19500B5B33F /* Authorization */,
-				E5819BC01EC9C19500B5B33F /* Comments */,
-				E5819BC11EC9C19500B5B33F /* Photo */,
-				E5819BC21EC9C19500B5B33F /* Search */,
-				E5819BC31EC9C19500B5B33F /* Settings */,
-			);
-			path = Modules;
 			sourceTree = "<group>";
 		};
 		E5819BAC1EC9B2CA00B5B33F /* Resources */ = {
@@ -179,148 +424,68 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		E5819BBF1EC9C19500B5B33F /* Authorization */ = {
+		E5B952621F151B1E00081C83 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				E5B952631F151B1E00081C83 /* AuthorizationModuleAssembly.h */,
+				E5B952641F151B1E00081C83 /* AuthorizationModuleAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		E5B952651F151B1E00081C83 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Authorization;
+			path = Entities;
 			sourceTree = "<group>";
 		};
-		E5819BC01EC9C19500B5B33F /* Comments */ = {
+		E5B952671F151B1E00081C83 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = Comments;
-			sourceTree = "<group>";
-		};
-		E5819BC11EC9C19500B5B33F /* Photo */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Photo;
-			sourceTree = "<group>";
-		};
-		E5819BC21EC9C19500B5B33F /* Search */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Search;
-			sourceTree = "<group>";
-		};
-		E5819BC31EC9C19500B5B33F /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Settings;
-			sourceTree = "<group>";
-		};
-		E5819BC41EC9C19D00B5B33F /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				E5819BC51EC9C19D00B5B33F /* Database */,
-				E5819BC61EC9C19D00B5B33F /* Network */,
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
-		E5819BC51EC9C19D00B5B33F /* Database */ = {
-			isa = PBXGroup;
-			children = (
-				E5819BC71EC9C1CC00B5B33F /* CoreData */,
-				E5819BC81EC9C1CC00B5B33F /* FMDB */,
-				E5819BC91EC9C1CC00B5B33F /* Realm */,
-			);
-			path = Database;
-			sourceTree = "<group>";
-		};
-		E5819BC61EC9C19D00B5B33F /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				E5819BCA1EC9C1E000B5B33F /* Flickr */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		E5819BC71EC9C1CC00B5B33F /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CoreData;
-			sourceTree = "<group>";
-		};
-		E5819BC81EC9C1CC00B5B33F /* FMDB */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = FMDB;
-			sourceTree = "<group>";
-		};
-		E5819BC91EC9C1CC00B5B33F /* Realm */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Realm;
-			sourceTree = "<group>";
-		};
-		E5819BCA1EC9C1E000B5B33F /* Flickr */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Flickr;
-			sourceTree = "<group>";
-		};
-		E5819BCB1EC9C22F00B5B33F /* TabBar */ = {
-			isa = PBXGroup;
-			children = (
-				E5819BE51EC9D89200B5B33F /* TabBarModuleInput.h */,
-				E5819BE61EC9E12D00B5B33F /* TabBarModuleOutput.h */,
-				E5819BD11EC9D73400B5B33F /* TabBarModuleAssembly.h */,
-				E5819BD21EC9D73400B5B33F /* TabBarModuleAssembly.m */,
-				E5819BCF1EC9D67100B5B33F /* View */,
-				E5819BCC1EC9D67100B5B33F /* Interactor */,
-				E5819BCD1EC9D67100B5B33F /* Presenter */,
-				E5819BCE1EC9D67100B5B33F /* Router */,
-			);
-			path = TabBar;
-			sourceTree = "<group>";
-		};
-		E5819BCC1EC9D67100B5B33F /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				E5819BE21EC9D80700B5B33F /* TabBarInteractorInput.h */,
-				E5819BE31EC9D85B00B5B33F /* TabBarInteractorOutput.h */,
-				E5819BD41EC9D75E00B5B33F /* TabBarInteractor.h */,
-				E5819BD51EC9D75E00B5B33F /* TabBarInteractor.m */,
+				E5B952681F151B1E00081C83 /* AuthorizationModuleInteractor.h */,
+				E5B952691F151B1E00081C83 /* AuthorizationModuleInteractor.m */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
 		};
-		E5819BCD1EC9D67100B5B33F /* Presenter */ = {
+		E5B9526A1F151B1E00081C83 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				E5819BD71EC9D77200B5B33F /* TabBarPresenter.h */,
-				E5819BD81EC9D77200B5B33F /* TabBarPresenter.m */,
+				E5B9526B1F151B1E00081C83 /* AuthorizationModulePresenter.h */,
+				E5B9526C1F151B1E00081C83 /* AuthorizationModulePresenter.m */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		E5819BCE1EC9D67100B5B33F /* Router */ = {
+		E5B9526D1F151B1E00081C83 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				E5819BE11EC9D7EF00B5B33F /* TabBarRouterInput.h */,
-				E5819BDA1EC9D78000B5B33F /* TabBarRouter.h */,
-				E5819BDB1EC9D78000B5B33F /* TabBarRouter.m */,
+				E5B9526E1F151B1E00081C83 /* AuthorizationModuleInput.h */,
+				E5B9526F1F151B1E00081C83 /* AuthorizationModuleInteractorInput.h */,
+				E5B952701F151B1E00081C83 /* AuthorizationModuleInteractorOutput.h */,
+				E5B952711F151B1E00081C83 /* AuthorizationModuleOutput.h */,
+				E5B952721F151B1E00081C83 /* AuthorizationModuleRouterInput.h */,
+				E5B952731F151B1E00081C83 /* AuthorizationModuleViewInput.h */,
+				E5B952741F151B1E00081C83 /* AuthorizationModuleViewOutput.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E5B952751F151B1E00081C83 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E5B952761F151B1E00081C83 /* AuthorizationModuleRouter.h */,
+				E5B952771F151B1E00081C83 /* AuthorizationModuleRouter.m */,
 			);
 			path = Router;
 			sourceTree = "<group>";
 		};
-		E5819BCF1EC9D67100B5B33F /* View */ = {
+		E5B952781F151B1E00081C83 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E5819BE01EC9D7C600B5B33F /* TabBarViewInput.h */,
-				E5819BE41EC9D87100B5B33F /* TabBarViewOutput.h */,
-				E5819BDD1EC9D79500B5B33F /* TabBarViewController.h */,
-				E5819BDE1EC9D79500B5B33F /* TabBarViewController.m */,
+				E5B952791F151B1E00081C83 /* AuthorizationModuleViewController.h */,
+				E5B9527A1F151B1E00081C83 /* AuthorizationModuleViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -359,7 +524,7 @@
 				TargetAttributes = {
 					E5819B861EC9A24E00B5B33F = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = E8DYRFL62Y;
+						DevelopmentTeam = ZXLCAVT38S;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -423,7 +588,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		EDCBC6A8EE97A4D138921039 /* [CP] Copy Pods Resources */ = {
@@ -448,15 +613,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5819B8F1EC9A24E00B5B33F /* FVAppDelegate.m in Sources */,
-				E5819BB61EC9B2CA00B5B33F /* FVStartUpConfigurator.m in Sources */,
-				E5819BD61EC9D75E00B5B33F /* TabBarInteractor.m in Sources */,
-				E5819BA41EC9A65500B5B33F /* FVApplicationAssembly.m in Sources */,
-				E5819BD91EC9D77200B5B33F /* TabBarPresenter.m in Sources */,
+				E5B9527C1F151B1E00081C83 /* AuthorizationModuleInteractor.m in Sources */,
+				E54FBB7A1F1399B00052F6CE /* ModuleFactory.m in Sources */,
+				E54FBB2A1F1387DD0052F6CE /* FVApplicationAssembly.m in Sources */,
+				E5B9527D1F151B1E00081C83 /* AuthorizationModulePresenter.m in Sources */,
+				E54FBB291F1387DD0052F6CE /* FVAppDelegate.m in Sources */,
+				E5B9527E1F151B1E00081C83 /* AuthorizationModuleRouter.m in Sources */,
+				E5328F781F161F840033A8EB /* PhotoCollectionModulePresenter.m in Sources */,
+				E5B9527B1F151B1E00081C83 /* AuthorizationModuleAssembly.m in Sources */,
+				E5328F7A1F161F840033A8EB /* PhotoCollectionModuleViewController.m in Sources */,
 				E5819B8C1EC9A24E00B5B33F /* main.m in Sources */,
-				E5819BDC1EC9D78000B5B33F /* TabBarRouter.m in Sources */,
-				E5819BDF1EC9D79500B5B33F /* TabBarViewController.m in Sources */,
-				E5819BD31EC9D73400B5B33F /* TabBarModuleAssembly.m in Sources */,
+				E54FBB761F1387E30052F6CE /* TabBarModuleViewController.m in Sources */,
+				E5328F5A1F1612C20033A8EB /* TabEntity.m in Sources */,
+				E5B9527F1F151B1E00081C83 /* AuthorizationModuleViewController.m in Sources */,
+				E54FBB751F1387E30052F6CE /* TabBarModuleRouter.m in Sources */,
+				E54FBB731F1387E30052F6CE /* TabBarModuleInteractor.m in Sources */,
+				E5328F771F161F840033A8EB /* PhotoCollectionModuleInteractor.m in Sources */,
+				E54FBB741F1387E30052F6CE /* TabBarModulePresenter.m in Sources */,
+				E54FBB721F1387E30052F6CE /* TabBarModuleAssembly.m in Sources */,
+				E5328F791F161F840033A8EB /* PhotoCollectionModuleRouter.m in Sources */,
+				E5328F761F161F840033A8EB /* PhotoCollectionModuleAssembly.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,7 +699,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -565,7 +741,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -577,10 +753,10 @@
 			baseConfigurationReference = 8B98AE677D153303B28DCFD6 /* Pods-FlickrViper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = E8DYRFL62Y;
+				DEVELOPMENT_TEAM = ZXLCAVT38S;
 				INFOPLIST_FILE = FlickrViper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = CHI.FlickrViper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.viper.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -590,10 +766,10 @@
 			baseConfigurationReference = B8F2EC9A2E46F3D10CBCC779 /* Pods-FlickrViper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = E8DYRFL62Y;
+				DEVELOPMENT_TEAM = ZXLCAVT38S;
 				INFOPLIST_FILE = FlickrViper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = CHI.FlickrViper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.viper.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
