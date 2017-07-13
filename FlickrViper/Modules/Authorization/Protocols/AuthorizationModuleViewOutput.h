@@ -12,6 +12,6 @@
 
 @protocol AuthorizationModuleViewOutput <NSObject>
 
-- (void)setupView;
+- (void)loginWithCredentials: (NSString*)login password: (NSString*)password;
 
 @end

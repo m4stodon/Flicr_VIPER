@@ -13,9 +13,6 @@
 #import "PhotoCollectionModulePresenter.h"
 
 
-#import "ModuleFactory.h"
-#import "ModuleFactoryProtocol.h"
-
 
 @class FVAppDelegate;
 @class TabBarModuleAssembly;

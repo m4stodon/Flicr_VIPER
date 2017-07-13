@@ -12,6 +12,6 @@
 
 @protocol AuthorizationModuleInteractorOutput <NSObject>
 
-- (void)manageNewTabs: (NSArray*)tabs;
+- (void)loginSuccess: (BOOL)result;
 
 @end

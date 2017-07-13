@@ -11,12 +11,14 @@
 
 
 @class TabBarModuleAssembly;
+@class AuthorizationModuleAssembly;
+@class PhotoCollectionModuleAssembly;
 
 
 @protocol ModuleFactoryProtocol <NSObject>
 
-
-+ (TabBarModuleAssembly*)getTabBarAssembly;
-
+- (TabBarModuleAssembly*)tabBarModule;
+- (AuthorizationModuleAssembly*)authorizationModule;
+- (PhotoCollectionModuleAssembly*)photoCollectionModule;
 
 @end

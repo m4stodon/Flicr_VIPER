@@ -10,10 +10,13 @@
 @import Foundation;
 #import "AuthorizationModuleRouterInput.h"
 #import "FlickrViperTransitionHandlerProtocol.h"
+#import "ModuleFactoryProtocol.h"
 
 
 @interface AuthorizationModuleRouter : NSObject <AuthorizationModuleRouterInput>
 
-@property (nonatomic, weak) id<FlickrViperTransitionHandlerProtocol> transitionHandler;
+// STRONG REFERENCE on the view
+@property (nonatomic, strong) id<FlickrViperTransitionHandlerProtocol> transitionHandler;
+@property (nonatomic, strong) id<ModuleFactoryProtocol> moduleFactory;
 
 @end

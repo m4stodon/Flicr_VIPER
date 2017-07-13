@@ -12,6 +12,6 @@
 
 @protocol AuthorizationModuleInteractorInput <NSObject>
 
-- (void)getTabs;
+- (void)checkCredentials: (NSString*)login password: (NSString*)password;
 
 @end

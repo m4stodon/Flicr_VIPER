@@ -8,10 +8,11 @@
 
 
 @import Foundation;
+#import "ModuleFactoryProtocol.h"
 
 
 @protocol AuthorizationModuleRouterInput <NSObject>
 
-
+- (void)routeToMainAppScreen;
 
 @end

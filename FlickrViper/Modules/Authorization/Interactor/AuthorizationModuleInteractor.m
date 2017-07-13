@@ -13,34 +13,34 @@
 
 @interface AuthorizationModuleInteractor()
 
-@property (nonatomic, strong) NSArray<TabEntity*>* tabs;
 
 @end
 
 @implementation AuthorizationModuleInteractor
 
 
-- (void)getTabs {
-    // instantiate
-    NSArray* newTabs = [[NSArray alloc] init];
-    
-    //[self.output manageNewTabs: newTabs];
-}
-
-- (void)openBetaModuleWithExampleString:(NSString*)exampleString {
-    
-//    [self.moduleFactory instantiatePhotoCollectionModuleWithChainingBlock:
-//     ^(id <FlickrViperTransitionHandlerProtocol> sourceModuleTransitionHandler,
-//       id <FlickrViperTransitionHandlerProtocol> destinationModuleTransitionHandler) {
-//         
-//         NSLog(@"opening BetaModule with example string");
-//     }];
-}
-
-
 #pragma mark - AuthorizationModuleInteractorInput
 
 
-
+- (void)checkCredentials: (NSString*)login password: (NSString*)password {
+    
+    // simulating network use
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        sleep(1); // sleep for 1 sec
+        BOOL result = true;
+        
+        if (![login isEqualToString: @"abc"]) {
+            result = false;
+        }
+        
+        if (![password isEqualToString: @"1"]) {
+            result = false;
+        }
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.output loginSuccess: result];
+        });
+    });
+}
 
 @end

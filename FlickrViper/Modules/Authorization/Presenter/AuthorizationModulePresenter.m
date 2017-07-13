@@ -9,39 +9,43 @@
 
 @import UIKit;
 #import "AuthorizationModulePresenter.h"
+#import "ModuleFactoryProtocol.h"
 
 
 @implementation AuthorizationModulePresenter
 
 
 #pragma mark - AuthorizationModuleInteractorOutput
-// Output from interactor
 
-- (void)manageNewTabs: (NSArray *)tabs {
-    [self.view setupTabs: tabs];
+
+- (void)loginSuccess: (BOOL)result {
+    
+    [self.view stopProcessing];
+    
+    if (result) {
+        NSLog(@"LOGIN SUCCESS");
+        [self.router routeToMainAppScreen];
+    } else {
+        NSLog(@"LOGIN FAILED");
+    }
 }
 
 
 #pragma mark - AuthorizationModuleViewOutput
-// Output from view
 
-- (void)setupView {
-    [self.interactor getTabs];
+
+- (void)loginWithCredentials: (NSString*)login password: (NSString*)password {
+    [self.view startProcessing];
+    [self.interactor checkCredentials: login password: password];
 }
 
 
+#pragma mark - AuthorizationModuleInput
+
+
+
+
 #pragma mark - AuthorizationModuleOutput
-// Output from module
-
-
-
-#pragma mark - AuthorizationModuleOutput
-// Input to this module
-
-- (UIViewController*)rootViewController {
-    // cast to supress de warnin'
-    return (UIViewController *)self.view;
-}
 
 
 @end

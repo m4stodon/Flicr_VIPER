@@ -6,11 +6,8 @@
 //  Copyright © 2017 Yermakov. All rights reserved.
 //
 
-#ifndef TabBarModuleInput_h
-#define TabBarModuleInput_h
 
-
-#endif /* TabBarModuleInput_h */
+@import UIKit;
 
 
 @protocol TabBarModuleInput <NSObject>

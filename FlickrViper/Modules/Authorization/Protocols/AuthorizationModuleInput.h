@@ -6,11 +6,9 @@
 //  Copyright © 2017 Yermakov. All rights reserved.
 //
 
-#ifndef AuthorizationModuleInput_h
-#define AuthorizationModuleInput_h
 
+#import "ModuleFactoryProtocol.h"
 
-#endif /* AuthorizationModuleInput_h */
 
 @protocol AuthorizationModuleInput <NSObject>
 

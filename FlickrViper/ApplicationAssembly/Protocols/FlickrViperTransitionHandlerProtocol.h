@@ -10,7 +10,31 @@
 @import Foundation;
 
 
+#import "TabBarModuleInput.h"
+#import "AuthorizationModuleOutput.h"
+
+
+
+
+
+@protocol FlickrViperModuleFactoryProtocol <NSObject>
+
+
+@end
+
+
+
+
+
 @protocol FlickrViperTransitionHandlerProtocol <NSObject>
+
+- (void)pushVC: (UIViewController*)viewController;
+
+- (void)openModuleUsingFactory: (id<FlickrViperModuleFactoryProtocol>)factory
+           withTransitionBlock: (void (^)(id <FlickrViperTransitionHandlerProtocol> sourceModuleTransitionHandler, id <FlickrViperTransitionHandlerProtocol> destinationModuleTransitionHandler))transitionBlock
+           thenChainUsingBlock: (id<AuthorizationModuleOutput>(^)(id<TabBarModuleInput> moduleInput))chainBlock;
+
+
 
 @optional
 - (void)removeModule;

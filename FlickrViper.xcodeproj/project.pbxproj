@@ -14,6 +14,7 @@
 		E5328F781F161F840033A8EB /* PhotoCollectionModulePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E5328F671F161F840033A8EB /* PhotoCollectionModulePresenter.m */; };
 		E5328F791F161F840033A8EB /* PhotoCollectionModuleRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = E5328F721F161F840033A8EB /* PhotoCollectionModuleRouter.m */; };
 		E5328F7A1F161F840033A8EB /* PhotoCollectionModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5328F751F161F840033A8EB /* PhotoCollectionModuleViewController.m */; };
+		E5328F7C1F1757F20033A8EB /* Authorization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5328F7B1F1757F20033A8EB /* Authorization.storyboard */; };
 		E54FBB291F1387DD0052F6CE /* FVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E54FBB231F1387DD0052F6CE /* FVAppDelegate.m */; };
 		E54FBB2A1F1387DD0052F6CE /* FVApplicationAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = E54FBB251F1387DD0052F6CE /* FVApplicationAssembly.m */; };
 		E54FBB721F1387E30052F6CE /* TabBarModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = E54FBB531F1387E30052F6CE /* TabBarModuleAssembly.m */; };
@@ -55,6 +56,7 @@
 		E5328F721F161F840033A8EB /* PhotoCollectionModuleRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PhotoCollectionModuleRouter.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		E5328F741F161F840033A8EB /* PhotoCollectionModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PhotoCollectionModuleViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		E5328F751F161F840033A8EB /* PhotoCollectionModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PhotoCollectionModuleViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		E5328F7B1F1757F20033A8EB /* Authorization.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Authorization.storyboard; sourceTree = "<group>"; };
 		E54FBB221F1387DD0052F6CE /* FVAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FVAppDelegate.h; sourceTree = "<group>"; };
 		E54FBB231F1387DD0052F6CE /* FVAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FVAppDelegate.m; sourceTree = "<group>"; };
 		E54FBB241F1387DD0052F6CE /* FVApplicationAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FVApplicationAssembly.h; sourceTree = "<group>"; };
@@ -486,6 +488,7 @@
 			children = (
 				E5B952791F151B1E00081C83 /* AuthorizationModuleViewController.h */,
 				E5B9527A1F151B1E00081C83 /* AuthorizationModuleViewController.m */,
+				E5328F7B1F1757F20033A8EB /* Authorization.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -552,6 +555,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5328F7C1F1757F20033A8EB /* Authorization.storyboard in Resources */,
 				E5819BB71EC9B2CA00B5B33F /* Assets.xcassets in Resources */,
 				E5819BB91EC9B2CA00B5B33F /* Main.storyboard in Resources */,
 				E5819BB81EC9B2CA00B5B33F /* LaunchScreen.storyboard in Resources */,

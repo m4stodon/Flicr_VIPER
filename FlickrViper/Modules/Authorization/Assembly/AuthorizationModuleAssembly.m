@@ -26,6 +26,7 @@
 
 @end
 
+
 @implementation AuthorizationModuleAssembly
 
 - (instancetype)init
@@ -37,7 +38,7 @@
     return self;
 }
 
-- (id<AuthorizationModuleOutput>)assembleAuthorizationModuleWithModuleFactory: (id<ModuleFactoryProtocol>)factory {
+- (id<AuthorizationModuleOutput>)assembleAuthorizationModuleWithModuleFactory: (id<ModuleFactoryProtocol>)factory {    
     return [self presenter];
 }
 
@@ -56,7 +57,7 @@
 // UI WITH STORYBOARDS
 - (AuthorizationModuleViewController*)viewWithStoryBoard {
     
-    return [TyphoonDefinition withFactory: [self storyBoardWithName: @"Main"]
+    return [TyphoonDefinition withFactory: [self storyBoardWithName: @"Authorization"]
                                  selector: @selector(instantiateViewControllerWithIdentifier:)
                                parameters: ^(TyphoonMethod *factoryMethod) {
                                    
@@ -91,13 +92,6 @@
                               // inject presenter as interactor output
                               [definition injectProperty: @selector(output)
                                                     with: [self presenter]];
-                              
-                              // inject <ModuleFactoryProtocol> compatible object
-                              // to instantiate tabs modules
-                              //if(self.moduleFactory) {
-                              //    [definition injectProperty: @selector(moduleFactory)
-                              //                          with: self.moduleFactory];
-                              //}
                           }];
 }
 
@@ -125,7 +119,7 @@
                               
                               // inject view as router action handler
                               [definition injectProperty: @selector(transitionHandler)
-                                                    with: [self viewWithStoryBoard]]; // UI WITH STORYBOARDS
+                                                    with: [self viewWithStoryBoard]]; // UI WITH STORYBOARDS                              
                           }];
 }
 

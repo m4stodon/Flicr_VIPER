@@ -18,6 +18,10 @@
 @interface AuthorizationModuleAssembly : TyphoonAssembly
 
 
+@property (nonatomic, strong) id<ModuleFactoryProtocol> moduleFactory;
+
+
 - (id<AuthorizationModuleOutput>)assembleAuthorizationModuleWithModuleFactory: (id<ModuleFactoryProtocol>)factory;
+
 
 @end

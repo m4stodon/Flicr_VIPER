@@ -10,11 +10,9 @@
 @import Foundation;
 
 
-@protocol TabEntity;
-
-
 @protocol AuthorizationModuleViewInput <NSObject>
 
-- (void)setupTabs: (NSArray<id<TabEntity>>*)tabs;
+- (void)startProcessing;
+- (void)stopProcessing;
 
 @end

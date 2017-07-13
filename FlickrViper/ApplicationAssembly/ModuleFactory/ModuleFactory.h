@@ -15,13 +15,9 @@
 #import "PhotoCollectionModuleAssembly.h"
 
 
-@interface ModuleFactory : TyphoonAssembly
+#import "ModuleFactoryProtocol.h"
 
 
-//@property(nonatomic, strong, readonly) TabBarModuleAssembly *tabBarModule;
-
-- (TabBarModuleAssembly*)tabBarModule;
-- (AuthorizationModuleAssembly*)authorizationModule;
-- (PhotoCollectionModuleAssembly*)photoCollectionModule;
+@interface ModuleFactory : TyphoonAssembly <ModuleFactoryProtocol>
 
 @end
