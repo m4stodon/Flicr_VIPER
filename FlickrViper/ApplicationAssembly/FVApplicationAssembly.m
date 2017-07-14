@@ -67,7 +67,7 @@
                 
                 // Inject AppDelegate
                 [definition injectProperty: @selector(rootViewController)
-                                      with: [self openAuthorizationModule]];
+                                      with: [FVApplicationAssembly openAuthorizationModule]];
             }];
 }
 
@@ -75,14 +75,14 @@
 #pragma mark - ModuleFactoryProtocol
 
 
-- (UIViewController*)openAuthorizationModule {
++ (UIViewController*)openAuthorizationModule {
     ModuleFactory* moduleFactory = [[ModuleFactory new] activated];
     AuthorizationModuleAssembly* authorizationModuleAssembly = [[moduleFactory authorizationModule] activated];
     AuthorizationModulePresenter* authorizationPresenter     = (AuthorizationModulePresenter*)[authorizationModuleAssembly assembleAuthorizationModuleWithModuleFactory: nil];
     return (UIViewController*)authorizationPresenter.view;
 }
 
-- (UIViewController*)openTabBarModule {
++ (UIViewController*)openTabBarModule {
     ModuleFactory* moduleFactory = [[ModuleFactory new] activated];
     TabBarModuleAssembly* tabBarModuleAssembly = [[moduleFactory tabBarModule] activated];
     TabBarModulePresenter* tabBarPresenter     = (TabBarModulePresenter*)[tabBarModuleAssembly assembleTabBarModuleWithModuleFactory: nil];

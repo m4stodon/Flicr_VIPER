@@ -32,7 +32,7 @@
 {
     self = [super init];
     if (self) {
-        NSLog(@"TabBarModuleAssembly::Init");
+        NSLog(@"\n\nTabBarModuleAssembly::Init\n");
     }
     return self;
 }

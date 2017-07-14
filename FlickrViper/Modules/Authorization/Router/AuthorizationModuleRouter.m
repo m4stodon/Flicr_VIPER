@@ -14,6 +14,7 @@
 #import "ModuleFactory.h"
 #import "PhotoCollectionModulePresenter.h"
 
+@import UIKit;
 
 @implementation AuthorizationModuleRouter
 

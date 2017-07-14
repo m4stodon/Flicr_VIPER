@@ -26,12 +26,7 @@
 @implementation AuthorizationModuleViewController
 
 - (void)pushVC:(UIViewController *)viewController {
-    
-    UIWindow* window = [[[UIApplication sharedApplication] delegate] window];
-    //[window.rootViewController presentViewController: viewController animated: true completion: nil];
-    
-    NSLog(@"%@", window.rootViewController);
-    NSLog(@"%@", self);
+    [self presentViewController: viewController animated: true completion: nil];
 }
 
 #pragma mark - Lifecycle
@@ -39,7 +34,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     NSLog(@"AuthorizationModuleViewController::ViewDidLoad::%@", self);
     
     [self setupIndicators];

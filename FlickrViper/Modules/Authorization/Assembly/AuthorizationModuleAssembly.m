@@ -29,20 +29,11 @@
 
 @implementation AuthorizationModuleAssembly
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        NSLog(@"AuthorizationModuleAssembly::Init");
-    }
-    return self;
+- (id<AuthorizationModuleOutput>)assembleAuthorizationModuleWithModuleFactory: (id<ModuleFactoryProtocol>)factory {
+    return [self authPresenter];
 }
 
-- (id<AuthorizationModuleOutput>)assembleAuthorizationModuleWithModuleFactory: (id<ModuleFactoryProtocol>)factory {    
-    return [self presenter];
-}
-
-- (UIStoryboard *)storyBoardWithName: (NSString *)name {
+- (UIStoryboard *)authStoryBoardWithName: (NSString *)name {
     
     return [TyphoonDefinition withClass: [UIStoryboard class]
                           configuration: ^(TyphoonDefinition *definition) {
@@ -55,9 +46,9 @@
 }
 
 // UI WITH STORYBOARDS
-- (AuthorizationModuleViewController*)viewWithStoryBoard {
+- (AuthorizationModuleViewController*)authViewWithStoryBoard {
     
-    return [TyphoonDefinition withFactory: [self storyBoardWithName: @"Authorization"]
+    return [TyphoonDefinition withFactory: [self authStoryBoardWithName: @"Authorization"]
                                  selector: @selector(instantiateViewControllerWithIdentifier:)
                                parameters: ^(TyphoonMethod *factoryMethod) {
                                    
@@ -66,9 +57,12 @@
                                }
                             configuration: ^(TyphoonFactoryDefinition *definition) {
                                 
+                                // THIS IS MUST HAVE SETTING - WHICH RESTRICTS REPEATEDLY INSTANTIATING OF VIEW CONTROLLERS
+                                definition.scope = TyphoonScopeSingleton;
+                                
                                 // inject presenter as view output
                                 [definition injectProperty: @selector(output)
-                                                      with: [self presenter]];
+                                                      with: [self authPresenter]];
                             }];
 }
 
@@ -84,18 +78,18 @@
 //                          }];
 //}
 
-- (AuthorizationModuleInteractor*)interactor {
+- (AuthorizationModuleInteractor*)authInteractor {
     
     return [TyphoonDefinition withClass: [AuthorizationModuleInteractor class]
                           configuration: ^(TyphoonDefinition *definition) {
                               
                               // inject presenter as interactor output
                               [definition injectProperty: @selector(output)
-                                                    with: [self presenter]];
+                                                    with: [self authPresenter]];
                           }];
 }
 
-- (AuthorizationModulePresenter*)presenter {
+- (AuthorizationModulePresenter*)authPresenter {
     
     return [TyphoonDefinition withClass: [AuthorizationModulePresenter class]
                           configuration: ^(TyphoonDefinition *definition) {
@@ -104,22 +98,22 @@
                               // inject interactor into presenter
                               // inject router into presenter
                               [definition injectProperty: @selector(view)
-                                                    with: [self viewWithStoryBoard]]; // UI WITH STORYBOARDS
+                                                    with: [self authViewWithStoryBoard]]; // UI WITH STORYBOARDS
                               [definition injectProperty: @selector(interactor)
-                                                    with: [self interactor]];
+                                                    with: [self authInteractor]];
                               [definition injectProperty: @selector(router)
-                                                    with: [self router]];
+                                                    with: [self authRouter]];
                           }];
 }
 
-- (AuthorizationModuleRouter*)router {
+- (AuthorizationModuleRouter*)authRouter {
     
     return [TyphoonDefinition withClass: [AuthorizationModuleRouter class]
                           configuration: ^(TyphoonDefinition *definition) {
                               
                               // inject view as router action handler
                               [definition injectProperty: @selector(transitionHandler)
-                                                    with: [self viewWithStoryBoard]]; // UI WITH STORYBOARDS                              
+                                                    with: [self authViewWithStoryBoard]]; // UI WITH STORYBOARDS
                           }];
 }
 
