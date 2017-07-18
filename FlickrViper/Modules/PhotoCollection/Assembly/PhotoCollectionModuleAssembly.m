@@ -56,7 +56,7 @@
 // UI WITH STORYBOARDS
 - (PhotoCollectionModuleViewController*)viewWithStoryBoard {
     
-    return [TyphoonDefinition withFactory: [self storyBoardWithName: @"Main"]
+    return [TyphoonDefinition withFactory: [self storyBoardWithName: @"PhotoCollection"]
                                  selector: @selector(instantiateViewControllerWithIdentifier:)
                                parameters: ^(TyphoonMethod *factoryMethod) {
                                    
