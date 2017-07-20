@@ -9,12 +9,14 @@
 
 #import "AuthorizationModuleRouter.h"
 
-
-@import Typhoon;
-#import "ModuleFactory.h"
-#import "PhotoCollectionModulePresenter.h"
-
 @import UIKit;
+@import Typhoon;
+
+#import "PhotoCollectionModulePresenter.h"
+#import "ModuleFactory.h"
+
+#import <objc/runtime.h>
+
 
 @implementation AuthorizationModuleRouter
 
@@ -23,13 +25,23 @@
     NSLog(@"%@", self.transitionHandler);
     NSLog(@"%@", self.moduleFactory);
     
-    ModuleFactory* moduleFactory = [[ModuleFactory new] activated];
-    PhotoCollectionModuleAssembly* photoCollectionModuleAssembly = [[moduleFactory photoCollectionModule] activated];
-    PhotoCollectionModulePresenter* photoCollectionPresenter = (PhotoCollectionModulePresenter*)[photoCollectionModuleAssembly assemblePhotoCollectionModuleWithModuleFactory: nil];
+    id moduleFactoryAccessor = ((ModuleFactory*)self.moduleFactory).accessor;
+    [self showMethodsFor: moduleFactoryAccessor];
     
+    PhotoCollectionModuleAssembly* photoCollectionModuleAssembly = [moduleFactoryAccessor photoCollectionModule];
+    PhotoCollectionModulePresenter* photoCollectionPresenter     = [photoCollectionModuleAssembly photoCollectionPresenter];
     UIViewController* destinationVC = photoCollectionPresenter.view;
-    
     [self.transitionHandler pushVC: destinationVC];
+}
+
+- (void)showMethodsFor: (id)object{
+    int i=0;
+    unsigned int mc = 0;
+    Method * mlist = class_copyMethodList(object_getClass(object), &mc);
+    NSLog(@"%d methods", mc);
+    for(i=0; i<mc; i++) {
+        NSLog(@"Method no #%d: %s", i, sel_getName(method_getName(mlist[i])));
+    }
 }
 
 

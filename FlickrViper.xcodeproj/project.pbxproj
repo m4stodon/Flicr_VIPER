@@ -60,6 +60,7 @@
 		E5328F741F161F840033A8EB /* PhotoCollectionModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PhotoCollectionModuleViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		E5328F751F161F840033A8EB /* PhotoCollectionModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PhotoCollectionModuleViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		E5328F7B1F1757F20033A8EB /* Authorization.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Authorization.storyboard; sourceTree = "<group>"; };
+		E53755011F20AF5F00CB6B37 /* FVApplicationAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FVApplicationAssembly.h; sourceTree = "<group>"; };
 		E54827AC1F190F8E005BEC40 /* PhotoCollection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PhotoCollection.storyboard; sourceTree = "<group>"; };
 		E54827AE1F191233005BEC40 /* PhotoCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionCell.h; sourceTree = "<group>"; };
 		E54827AF1F191233005BEC40 /* PhotoCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionCell.m; sourceTree = "<group>"; };
@@ -67,7 +68,6 @@
 		E54827B41F191362005BEC40 /* PhotoCardEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCardEntity.m; sourceTree = "<group>"; };
 		E54FBB221F1387DD0052F6CE /* FVAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FVAppDelegate.h; sourceTree = "<group>"; };
 		E54FBB231F1387DD0052F6CE /* FVAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FVAppDelegate.m; sourceTree = "<group>"; };
-		E54FBB241F1387DD0052F6CE /* FVApplicationAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FVApplicationAssembly.h; sourceTree = "<group>"; };
 		E54FBB251F1387DD0052F6CE /* FVApplicationAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FVApplicationAssembly.m; sourceTree = "<group>"; };
 		E54FBB281F1387DD0052F6CE /* FlickrViperTransitionHandlerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrViperTransitionHandlerProtocol.h; sourceTree = "<group>"; };
 		E54FBB521F1387E30052F6CE /* TabBarModuleAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarModuleAssembly.h; sourceTree = "<group>"; };
@@ -233,7 +233,7 @@
 		E54FBB201F1387DD0052F6CE /* ApplicationAssembly */ = {
 			isa = PBXGroup;
 			children = (
-				E54FBB241F1387DD0052F6CE /* FVApplicationAssembly.h */,
+				E53755011F20AF5F00CB6B37 /* FVApplicationAssembly.h */,
 				E54FBB251F1387DD0052F6CE /* FVApplicationAssembly.m */,
 				E54FBB211F1387DD0052F6CE /* AppDelegate */,
 				E54FBB261F1387DD0052F6CE /* ModuleFactory */,

@@ -10,18 +10,20 @@
 @import Foundation;
 @import Typhoon;
 
+
 @protocol AuthorizationModuleInput;
 @protocol AuthorizationModuleOutput;
 @protocol ModuleFactoryProtocol;
 
+@class AuthorizationModulePresenter;
+
+
+
 
 @interface AuthorizationModuleAssembly : TyphoonAssembly
 
-
 @property (nonatomic, strong) id<ModuleFactoryProtocol> moduleFactory;
 
-
-- (id<AuthorizationModuleOutput>)assembleAuthorizationModuleWithModuleFactory: (id<ModuleFactoryProtocol>)factory;
-
+- (AuthorizationModulePresenter*)authPresenter;
 
 @end

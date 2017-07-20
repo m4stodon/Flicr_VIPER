@@ -10,14 +10,12 @@
 @import Foundation;
 @import Typhoon;
 
-@protocol PhotoCollectionModuleInput;
-@protocol PhotoCollectionModuleOutput;
-@protocol ModuleFactoryProtocol;
+
+@class PhotoCollectionModulePresenter;
 
 
 @interface PhotoCollectionModuleAssembly : TyphoonAssembly
 
-
-- (id<PhotoCollectionModuleOutput>)assemblePhotoCollectionModuleWithModuleFactory: (id<ModuleFactoryProtocol>)factory;
+- (PhotoCollectionModulePresenter*)photoCollectionPresenter;
 
 @end

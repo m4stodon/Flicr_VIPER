@@ -13,6 +13,7 @@
 @class TabBarModuleAssembly;
 @class AuthorizationModuleAssembly;
 @class PhotoCollectionModuleAssembly;
+@class ModuleFactory;
 
 
 @protocol ModuleFactoryProtocol <NSObject>

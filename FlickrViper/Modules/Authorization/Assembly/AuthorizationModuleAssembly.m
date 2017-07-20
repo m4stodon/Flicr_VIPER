@@ -13,8 +13,7 @@
 #import "AuthorizationModuleInteractor.h"
 #import "AuthorizationModulePresenter.h"
 #import "AuthorizationModuleRouter.h"
-
-#import "FVApplicationAssembly.h"
+#import "ModuleFactory.h"
 
 // protocols
 #import "AuthorizationModuleInput.h"
@@ -22,16 +21,17 @@
 #import "ModuleFactoryProtocol.h"
 
 
-@interface AuthorizationModuleAssembly()
-
-@end
-
-
 @implementation AuthorizationModuleAssembly
 
-- (id<AuthorizationModuleOutput>)assembleAuthorizationModuleWithModuleFactory: (id<ModuleFactoryProtocol>)factory {
-    return [self authPresenter];
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        NSLog(@"  ---  AuthorizationModuleAssembly instantiated  ---  ");
+    }
+    return self;
 }
+
 
 - (UIStoryboard *)authStoryBoardWithName: (NSString *)name {
     
@@ -114,6 +114,18 @@
                               // inject view as router action handler
                               [definition injectProperty: @selector(transitionHandler)
                                                     with: [self authViewWithStoryBoard]]; // UI WITH STORYBOARDS
+                              
+                              // inject module factory
+                               [definition injectProperty: @selector(moduleFactory)
+                                                     with: [self moduleFactoryAssembly]];
+                          }];
+}
+
+- (ModuleFactory*)moduleFactoryAssembly {
+    
+    return [TyphoonDefinition withClass: [ModuleFactory class]
+                          configuration: ^(TyphoonDefinition *definition) {
+                              definition.scope = TyphoonScopeSingleton;
                           }];
 }
 

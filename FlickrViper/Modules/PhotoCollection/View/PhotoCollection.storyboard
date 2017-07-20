@@ -13,7 +13,7 @@
         <!--Photo Collection Module View Controller-->
         <scene sceneID="U6I-5a-0Ef">
             <objects>
-                <viewController id="gVn-Ab-qb9" customClass="PhotoCollectionModuleViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PhotoCollectionModuleViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gVn-Ab-qb9" customClass="PhotoCollectionModuleViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="i7B-YR-I2I"/>
                         <viewControllerLayoutGuide type="bottom" id="hlv-Kn-VbW"/>

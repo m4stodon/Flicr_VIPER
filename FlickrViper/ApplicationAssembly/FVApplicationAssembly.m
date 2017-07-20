@@ -24,69 +24,37 @@
 #import "PhotoCollectionModulePresenter.h"
 
 
-
-@interface FVApplicationAssembly()
-
-
-
-@end
-
-
 @implementation FVApplicationAssembly
 
 
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        NSLog(@"  ---  FVApplicationAssembly instantiated  ---  ");
+    }
+    return self;
+}
+
+
 - (FVAppDelegate *)appDelegate {
+    NSLog(@"*********appDelegate***************");
     return [TyphoonDefinition withClass: [FVAppDelegate class]
-                          configuration: ^(TyphoonDefinition *definition)
-            {
-                
-                
-                // Init module factory
-                //ModuleFactory* moduleFactory = [ModuleFactory new];
-                //moduleFactory = [moduleFactory activated];
-                
-                
-                // Init modules assemblies
-                //TabBarModuleAssembly*          tabBarModuleAssembly          = [[moduleFactory tabBarModule] activated];
-                //AuthorizationModuleAssembly*   authorizationModuleAssembly   = [[moduleFactory authorizationModule] activated];
-                //PhotoCollectionModuleAssembly* photoCollectionModuleAssembly = [[moduleFactory photoCollectionModule] activated];
-                
-                
-                // Assemble modules
-                //TabBarModulePresenter* tabBarPresenter                   = (TabBarModulePresenter*)[tabBarModuleAssembly assembleTabBarModuleWithModuleFactory: nil];
-                //AuthorizationModulePresenter* authorizationPresenter     = (AuthorizationModulePresenter*)[authorizationModuleAssembly assembleAuthorizationModuleWithModuleFactory: nil];
-                //PhotoCollectionModulePresenter* photoCollectionPresenter = (PhotoCollectionModulePresenter*)[photoCollectionModuleAssembly assemblePhotoCollectionModuleWithModuleFactory: nil];
-                
-                
-                // Add Modules views to TabBarViewController
-                //NSMutableArray* viewControllers = [[NSMutableArray alloc] init];
-                //[viewControllers addObject: authorizationPresenter.view];
-                //[viewControllers addObject: photoCollectionPresenter.view];
-                //[tabBarPresenter addAsTabs: viewControllers];
-                
-                
-                // Inject AppDelegate
-                [definition injectProperty: @selector(rootViewController)
-                                      with: [FVApplicationAssembly openAuthorizationModule]];
-            }];
+                          configuration: ^(TyphoonDefinition *definition) {
+                              // Inject AppDelegate with root view controller
+                              [definition injectProperty: @selector(rootViewController)
+                                                    with: [self openAuthorizationModule]];
+                          }];
 }
 
 
 #pragma mark - ModuleFactoryProtocol
 
 
-+ (UIViewController*)openAuthorizationModule {
+- (UIViewController*)openAuthorizationModule {
     ModuleFactory* moduleFactory = [[ModuleFactory new] activated];
     AuthorizationModuleAssembly* authorizationModuleAssembly = [[moduleFactory authorizationModule] activated];
-    AuthorizationModulePresenter* authorizationPresenter     = (AuthorizationModulePresenter*)[authorizationModuleAssembly assembleAuthorizationModuleWithModuleFactory: nil];
+    AuthorizationModulePresenter* authorizationPresenter     = [authorizationModuleAssembly authPresenter];
     return (UIViewController*)authorizationPresenter.view;
-}
-
-+ (UIViewController*)openTabBarModule {
-    ModuleFactory* moduleFactory = [[ModuleFactory new] activated];
-    TabBarModuleAssembly* tabBarModuleAssembly = [[moduleFactory tabBarModule] activated];
-    TabBarModulePresenter* tabBarPresenter     = (TabBarModulePresenter*)[tabBarModuleAssembly assembleTabBarModuleWithModuleFactory: nil];
-    return (UIViewController*)tabBarPresenter.view;
 }
 
 

@@ -13,8 +13,7 @@
 #import "PhotoCollectionModuleInteractor.h"
 #import "PhotoCollectionModulePresenter.h"
 #import "PhotoCollectionModuleRouter.h"
-
-#import "FVApplicationAssembly.h"
+#import "ModuleFactory.h"
 
 // protocols
 #import "PhotoCollectionModuleInput.h"
@@ -22,11 +21,8 @@
 #import "ModuleFactoryProtocol.h"
 
 
-@interface PhotoCollectionModuleAssembly()
-
-@end
-
 @implementation PhotoCollectionModuleAssembly
+
 
 - (instancetype)init
 {
@@ -37,11 +33,8 @@
     return self;
 }
 
-- (id<PhotoCollectionModuleOutput>)assemblePhotoCollectionModuleWithModuleFactory: (id<ModuleFactoryProtocol>)factory {
-    return [self presenter];
-}
 
-- (UIStoryboard *)storyBoardWithName: (NSString *)name {
+- (UIStoryboard *)photoCollectionStoryBoardWithName: (NSString *)name {
     
     return [TyphoonDefinition withClass: [UIStoryboard class]
                           configuration: ^(TyphoonDefinition *definition) {
@@ -54,9 +47,9 @@
 }
 
 // UI WITH STORYBOARDS
-- (PhotoCollectionModuleViewController*)viewWithStoryBoard {
+- (PhotoCollectionModuleViewController*)photoCollectionViewWithStoryBoard {
     
-    return [TyphoonDefinition withFactory: [self storyBoardWithName: @"PhotoCollection"]
+    return [TyphoonDefinition withFactory: [self photoCollectionStoryBoardWithName: @"PhotoCollection"]
                                  selector: @selector(instantiateViewControllerWithIdentifier:)
                                parameters: ^(TyphoonMethod *factoryMethod) {
                                    
@@ -67,7 +60,7 @@
                                 
                                 // inject presenter as view output
                                 [definition injectProperty: @selector(output)
-                                                      with: [self presenter]];
+                                                      with: [self photoCollectionPresenter]];
                             }];
 }
 
@@ -83,14 +76,14 @@
 //                          }];
 //}
 
-- (PhotoCollectionModuleInteractor*)interactor {
+- (PhotoCollectionModuleInteractor*)photoCollectionInteractor {
     
     return [TyphoonDefinition withClass: [PhotoCollectionModuleInteractor class]
                           configuration: ^(TyphoonDefinition *definition) {
                               
                               // inject presenter as interactor output
                               [definition injectProperty: @selector(output)
-                                                    with: [self presenter]];
+                                                    with: [self photoCollectionPresenter]];
                               
                               // inject <ModuleFactoryProtocol> compatible object
                               // to instantiate tabs modules
@@ -101,7 +94,7 @@
                           }];
 }
 
-- (PhotoCollectionModulePresenter*)presenter {
+- (PhotoCollectionModulePresenter*)photoCollectionPresenter {
     
     return [TyphoonDefinition withClass: [PhotoCollectionModulePresenter class]
                           configuration: ^(TyphoonDefinition *definition) {
@@ -110,22 +103,34 @@
                               // inject interactor into presenter
                               // inject router into presenter
                               [definition injectProperty: @selector(view)
-                                                    with: [self viewWithStoryBoard]]; // UI WITH STORYBOARDS
+                                                    with: [self photoCollectionViewWithStoryBoard]]; // UI WITH STORYBOARDS
                               [definition injectProperty: @selector(interactor)
-                                                    with: [self interactor]];
+                                                    with: [self photoCollectionInteractor]];
                               [definition injectProperty: @selector(router)
-                                                    with: [self router]];
+                                                    with: [self photoCollectionRouter]];
                           }];
 }
 
-- (PhotoCollectionModuleRouter*)router {
+- (PhotoCollectionModuleRouter*)photoCollectionRouter {
     
     return [TyphoonDefinition withClass: [PhotoCollectionModuleRouter class]
                           configuration: ^(TyphoonDefinition *definition) {
                               
                               // inject view as router action handler
                               [definition injectProperty: @selector(transitionHandler)
-                                                    with: [self viewWithStoryBoard]]; // UI WITH STORYBOARDS
+                                                    with: [self photoCollectionViewWithStoryBoard]]; // UI WITH STORYBOARDS
+                              
+                              // inject module factory
+                              [definition injectProperty: @selector(moduleFactory)
+                                                    with: [self moduleFactoryAssembly]];
+                          }];
+}
+
+- (ModuleFactory*)moduleFactoryAssembly {
+    
+    return [TyphoonDefinition withClass: [ModuleFactory class]
+                          configuration: ^(TyphoonDefinition *definition) {
+                              definition.scope = TyphoonScopeSingleton;
                           }];
 }
 
