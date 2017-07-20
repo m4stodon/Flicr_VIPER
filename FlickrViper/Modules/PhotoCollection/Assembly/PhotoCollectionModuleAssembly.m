@@ -121,8 +121,8 @@
                                                     with: [self photoCollectionViewWithStoryBoard]]; // UI WITH STORYBOARDS
                               
                               // inject module factory
-                              [definition injectProperty: @selector(moduleFactory)
-                                                    with: [self moduleFactoryAssembly]];
+                              //[definition injectProperty: @selector(moduleFactory)
+                              //                      with: [self moduleFactoryAssembly]];
                           }];
 }
 

@@ -25,10 +25,12 @@
     NSLog(@"%@", self.transitionHandler);
     NSLog(@"%@", self.moduleFactory);
     
-    id moduleFactoryAccessor = ((ModuleFactory*)self.moduleFactory).accessor;
-    [self showMethodsFor: moduleFactoryAccessor];
+//    id moduleFactoryAccessor = ((ModuleFactory*)self.moduleFactory).accessor;
+//    [self showMethodsFor: moduleFactoryAccessor];
     
-    PhotoCollectionModuleAssembly* photoCollectionModuleAssembly = [moduleFactoryAccessor photoCollectionModule];
+    ModuleFactory* moduleFactoryAccessor = [[ModuleFactory new] activated];
+    
+    PhotoCollectionModuleAssembly* photoCollectionModuleAssembly = [[moduleFactoryAccessor photoCollectionModule] activated];
     PhotoCollectionModulePresenter* photoCollectionPresenter     = [photoCollectionModuleAssembly photoCollectionPresenter];
     UIViewController* destinationVC = photoCollectionPresenter.view;
     [self.transitionHandler pushVC: destinationVC];
