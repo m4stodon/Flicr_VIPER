@@ -20,30 +20,17 @@
 
 @implementation AuthorizationModuleRouter
 
-- (void)routeToMainAppScreen {
-    NSLog(@"[self.transitionHandler moveToMainAppScreen]");
-    NSLog(@"%@", self.transitionHandler);
-    NSLog(@"%@", self.moduleFactory);
+- (void)routeToMainAppScreen {    
+    // Activate module assembly to factorize the modules
+    id moduleFactoryAccessor = ((ModuleFactory*)self.moduleFactory).activated;
+    // Factorize module and activate
+    PhotoCollectionModuleAssembly*  photoCollectionModuleAssembly = [[moduleFactoryAccessor photoCollectionModule] activated];
+    // Get module view
+    PhotoCollectionModulePresenter* photoCollectionPresenter      = [photoCollectionModuleAssembly photoCollectionPresenter];
     
-//    id moduleFactoryAccessor = ((ModuleFactory*)self.moduleFactory).accessor;
-//    [self showMethodsFor: moduleFactoryAccessor];
-    
-    ModuleFactory* moduleFactoryAccessor = [[ModuleFactory new] activated];
-    
-    PhotoCollectionModuleAssembly* photoCollectionModuleAssembly = [[moduleFactoryAccessor photoCollectionModule] activated];
-    PhotoCollectionModulePresenter* photoCollectionPresenter     = [photoCollectionModuleAssembly photoCollectionPresenter];
     UIViewController* destinationVC = photoCollectionPresenter.view;
+    // Route to the view
     [self.transitionHandler pushVC: destinationVC];
-}
-
-- (void)showMethodsFor: (id)object{
-    int i=0;
-    unsigned int mc = 0;
-    Method * mlist = class_copyMethodList(object_getClass(object), &mc);
-    NSLog(@"%d methods", mc);
-    for(i=0; i<mc; i++) {
-        NSLog(@"Method no #%d: %s", i, sel_getName(method_getName(mlist[i])));
-    }
 }
 
 

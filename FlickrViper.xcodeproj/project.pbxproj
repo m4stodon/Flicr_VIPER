@@ -199,9 +199,9 @@
 			isa = PBXGroup;
 			children = (
 				E5328F691F161F840033A8EB /* PhotoCollectionModuleInput.h */,
+				E5328F6C1F161F840033A8EB /* PhotoCollectionModuleOutput.h */,
 				E5328F6A1F161F840033A8EB /* PhotoCollectionModuleInteractorInput.h */,
 				E5328F6B1F161F840033A8EB /* PhotoCollectionModuleInteractorOutput.h */,
-				E5328F6C1F161F840033A8EB /* PhotoCollectionModuleOutput.h */,
 				E5328F6D1F161F840033A8EB /* PhotoCollectionModuleRouterInput.h */,
 				E5328F6E1F161F840033A8EB /* PhotoCollectionModuleViewInput.h */,
 				E5328F6F1F161F840033A8EB /* PhotoCollectionModuleViewOutput.h */,

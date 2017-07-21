@@ -11,10 +11,6 @@
 #import "TabEntity.h"
 #import "FlickrViperTransitionHandlerProtocol.h"
 
-@interface AuthorizationModuleInteractor()
-
-
-@end
 
 @implementation AuthorizationModuleInteractor
 

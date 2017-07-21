@@ -6,11 +6,6 @@
 //  Copyright © 2017 Yermakov. All rights reserved.
 //
 
-#ifndef PhotoCollectionModuleInput_h
-#define PhotoCollectionModuleInput_h
-
-
-#endif /* PhotoCollectionModuleInput_h */
 
 @protocol PhotoCollectionModuleInput <NSObject>
 

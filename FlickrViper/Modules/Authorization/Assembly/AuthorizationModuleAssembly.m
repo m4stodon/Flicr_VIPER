@@ -24,13 +24,13 @@
 @implementation AuthorizationModuleAssembly
 
 
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-        NSLog(@"  ---  AuthorizationModuleAssembly instantiated  ---  ");
-    }
-    return self;
-}
+//- (instancetype)init {
+//    self = [super init];
+//    if (self) {
+//        NSLog(@"  ---  AuthorizationModuleAssembly instantiated  ---  ");
+//    }
+//    return self;
+//}
 
 
 - (UIStoryboard *)authStoryBoardWithName: (NSString *)name {
@@ -122,7 +122,8 @@
 }
 
 - (ModuleFactory*)moduleFactoryAssembly {
-    
+    // Assemble unified Module Factory
+    // We can create and use defined Module Factories for each module to restrict access to other modules from this
     return [TyphoonDefinition withClass: [ModuleFactory class]
                           configuration: ^(TyphoonDefinition *definition) {
                               definition.scope = TyphoonScopeSingleton;

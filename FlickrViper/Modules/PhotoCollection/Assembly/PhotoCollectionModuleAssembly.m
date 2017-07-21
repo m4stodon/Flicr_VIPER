@@ -24,14 +24,14 @@
 @implementation PhotoCollectionModuleAssembly
 
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        NSLog(@"PhotoCollectionModuleAssembly::Init");
-    }
-    return self;
-}
+//- (instancetype)init
+//{
+//    self = [super init];
+//    if (self) {
+//        NSLog(@"PhotoCollectionModuleAssembly::Init");
+//    }
+//    return self;
+//}
 
 
 - (UIStoryboard *)photoCollectionStoryBoardWithName: (NSString *)name {
@@ -121,13 +121,14 @@
                                                     with: [self photoCollectionViewWithStoryBoard]]; // UI WITH STORYBOARDS
                               
                               // inject module factory
-                              //[definition injectProperty: @selector(moduleFactory)
-                              //                      with: [self moduleFactoryAssembly]];
+                              [definition injectProperty: @selector(moduleFactory)
+                                                    with: [self moduleFactoryAssembly]];
                           }];
 }
 
 - (ModuleFactory*)moduleFactoryAssembly {
-    
+    // Assemble unified Module Factory
+    // We can create and use defined Module Factories for each module to restrict access to other modules from this
     return [TyphoonDefinition withClass: [ModuleFactory class]
                           configuration: ^(TyphoonDefinition *definition) {
                               definition.scope = TyphoonScopeSingleton;
