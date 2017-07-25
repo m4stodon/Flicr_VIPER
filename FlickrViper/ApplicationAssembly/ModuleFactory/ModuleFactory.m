@@ -25,6 +25,12 @@
 #import "PhotoCollectionModuleAssembly.h"
 #import "PhotoCollectionModulePresenter.h"
 //
+#import "SettingsModuleInput.h"
+#import "SettingsModuleOutput.h"
+#import "SettingsModuleAssembly.h"
+#import "SettingsModulePresenter.h"
+//
+
 
 
 @implementation ModuleFactory
@@ -61,9 +67,12 @@
     return photoCollectionModulePresenter;
 }
 
-//+ (id<>)openSettingsModuleWith: (id<>)outputHandler {
-//    
-//    return id;
-//}
++ (id<SettingsModuleInput>)openSettingsModuleWith: (id<SettingsModuleOutput>)outputHandler {
+    AssemblyFactory* moduleFactory = [[AssemblyFactory new] activated];
+    SettingsModuleAssembly*  settingsModuleAssembly  = [[moduleFactory settingsModule] activated];
+    SettingsModulePresenter* settingsModulePresenter = [settingsModuleAssembly settingsPresenter];
+    settingsModulePresenter.output = outputHandler;
+    return settingsModulePresenter;
+}
 
 @end

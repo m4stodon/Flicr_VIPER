@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		B90B6B29DD5620CE7F6F4AEA /* Pods_FlickrViper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D0C8B4501FF85FA0A828E7 /* Pods_FlickrViper.framework */; };
+		CE0864301F27D98A00F9D10E /* SettingsModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0864151F27D98A00F9D10E /* SettingsModuleAssembly.m */; };
+		CE0864321F27D98A00F9D10E /* SettingsModuleInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = CE08641B1F27D98A00F9D10E /* SettingsModuleInteractor.m */; };
+		CE0864331F27D98A00F9D10E /* SettingsModulePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE08641E1F27D98A00F9D10E /* SettingsModulePresenter.m */; };
+		CE0864341F27D98A00F9D10E /* SettingsModuleRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0864291F27D98A00F9D10E /* SettingsModuleRouter.m */; };
+		CE0864351F27D98A00F9D10E /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE08642B1F27D98A00F9D10E /* Settings.storyboard */; };
+		CE0864371F27D98A00F9D10E /* SettingsModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE08642F1F27D98A00F9D10E /* SettingsModuleViewController.m */; };
 		CE60B2161F24151200099669 /* AssemblyFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = CE60B2151F24151200099669 /* AssemblyFactory.m */; };
 		E5328F5A1F1612C20033A8EB /* TabEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = E5328F591F1612C20033A8EB /* TabEntity.m */; };
 		E5328F761F161F840033A8EB /* PhotoCollectionModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = E5328F601F161F840033A8EB /* PhotoCollectionModuleAssembly.m */; };
@@ -43,6 +49,24 @@
 		8B98AE677D153303B28DCFD6 /* Pods-FlickrViper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickrViper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlickrViper/Pods-FlickrViper.debug.xcconfig"; sourceTree = "<group>"; };
 		B8F2EC9A2E46F3D10CBCC779 /* Pods-FlickrViper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickrViper.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlickrViper/Pods-FlickrViper.release.xcconfig"; sourceTree = "<group>"; };
 		CE0864111F24FB7B00F9D10E /* ModuleFactoryProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleFactoryProtocol.h; sourceTree = "<group>"; };
+		CE0864141F27D98A00F9D10E /* SettingsModuleAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsModuleAssembly.h; sourceTree = "<group>"; };
+		CE0864151F27D98A00F9D10E /* SettingsModuleAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsModuleAssembly.m; sourceTree = "<group>"; };
+		CE08641A1F27D98A00F9D10E /* SettingsModuleInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsModuleInteractor.h; sourceTree = "<group>"; };
+		CE08641B1F27D98A00F9D10E /* SettingsModuleInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsModuleInteractor.m; sourceTree = "<group>"; };
+		CE08641D1F27D98A00F9D10E /* SettingsModulePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsModulePresenter.h; sourceTree = "<group>"; };
+		CE08641E1F27D98A00F9D10E /* SettingsModulePresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsModulePresenter.m; sourceTree = "<group>"; };
+		CE0864201F27D98A00F9D10E /* SettingsModuleInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsModuleInput.h; sourceTree = "<group>"; };
+		CE0864211F27D98A00F9D10E /* SettingsModuleInteractorInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsModuleInteractorInput.h; sourceTree = "<group>"; };
+		CE0864221F27D98A00F9D10E /* SettingsModuleInteractorOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsModuleInteractorOutput.h; sourceTree = "<group>"; };
+		CE0864231F27D98A00F9D10E /* SettingsModuleOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsModuleOutput.h; sourceTree = "<group>"; };
+		CE0864241F27D98A00F9D10E /* SettingsModuleRouterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsModuleRouterInput.h; sourceTree = "<group>"; };
+		CE0864251F27D98A00F9D10E /* SettingsModuleViewInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsModuleViewInput.h; sourceTree = "<group>"; };
+		CE0864261F27D98A00F9D10E /* SettingsModuleViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsModuleViewOutput.h; sourceTree = "<group>"; };
+		CE0864281F27D98A00F9D10E /* SettingsModuleRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsModuleRouter.h; sourceTree = "<group>"; };
+		CE0864291F27D98A00F9D10E /* SettingsModuleRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsModuleRouter.m; sourceTree = "<group>"; };
+		CE08642B1F27D98A00F9D10E /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		CE08642E1F27D98A00F9D10E /* SettingsModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsModuleViewController.h; sourceTree = "<group>"; };
+		CE08642F1F27D98A00F9D10E /* SettingsModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsModuleViewController.m; sourceTree = "<group>"; };
 		CE60B2141F24151200099669 /* AssemblyFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssemblyFactory.h; sourceTree = "<group>"; };
 		CE60B2151F24151200099669 /* AssemblyFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssemblyFactory.m; sourceTree = "<group>"; };
 		E5328F591F1612C20033A8EB /* TabEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabEntity.m; sourceTree = "<group>"; };
@@ -146,6 +170,87 @@
 				B8F2EC9A2E46F3D10CBCC779 /* Pods-FlickrViper.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE0864121F27D98A00F9D10E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CE0864131F27D98A00F9D10E /* Assembly */,
+				CE0864161F27D98A00F9D10E /* Entities */,
+				CE0864191F27D98A00F9D10E /* Interactor */,
+				CE08641C1F27D98A00F9D10E /* Presenter */,
+				CE08641F1F27D98A00F9D10E /* Protocols */,
+				CE0864271F27D98A00F9D10E /* Router */,
+				CE08642A1F27D98A00F9D10E /* View */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		CE0864131F27D98A00F9D10E /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				CE0864141F27D98A00F9D10E /* SettingsModuleAssembly.h */,
+				CE0864151F27D98A00F9D10E /* SettingsModuleAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		CE0864161F27D98A00F9D10E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		CE0864191F27D98A00F9D10E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CE08641A1F27D98A00F9D10E /* SettingsModuleInteractor.h */,
+				CE08641B1F27D98A00F9D10E /* SettingsModuleInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CE08641C1F27D98A00F9D10E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CE08641D1F27D98A00F9D10E /* SettingsModulePresenter.h */,
+				CE08641E1F27D98A00F9D10E /* SettingsModulePresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CE08641F1F27D98A00F9D10E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CE0864201F27D98A00F9D10E /* SettingsModuleInput.h */,
+				CE0864211F27D98A00F9D10E /* SettingsModuleInteractorInput.h */,
+				CE0864221F27D98A00F9D10E /* SettingsModuleInteractorOutput.h */,
+				CE0864231F27D98A00F9D10E /* SettingsModuleOutput.h */,
+				CE0864241F27D98A00F9D10E /* SettingsModuleRouterInput.h */,
+				CE0864251F27D98A00F9D10E /* SettingsModuleViewInput.h */,
+				CE0864261F27D98A00F9D10E /* SettingsModuleViewOutput.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CE0864271F27D98A00F9D10E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CE0864281F27D98A00F9D10E /* SettingsModuleRouter.h */,
+				CE0864291F27D98A00F9D10E /* SettingsModuleRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CE08642A1F27D98A00F9D10E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE08642B1F27D98A00F9D10E /* Settings.storyboard */,
+				CE08642E1F27D98A00F9D10E /* SettingsModuleViewController.h */,
+				CE08642F1F27D98A00F9D10E /* SettingsModuleViewController.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		E5328F5D1F161F840033A8EB /* PhotoCollection */ = {
@@ -280,7 +385,7 @@
 				E54FBB2C1F1387E30052F6CE /* Authorization */,
 				E54FBB501F1387E30052F6CE /* TabBar */,
 				E5328F5D1F161F840033A8EB /* PhotoCollection */,
-				E54FBB4F1F1387E30052F6CE /* Settings */,
+				CE0864121F27D98A00F9D10E /* Settings */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -297,13 +402,6 @@
 				E5B952781F151B1E00081C83 /* View */,
 			);
 			path = Authorization;
-			sourceTree = "<group>";
-		};
-		E54FBB4F1F1387E30052F6CE /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Settings;
 			sourceTree = "<group>";
 		};
 		E54FBB501F1387E30052F6CE /* TabBar */ = {
@@ -578,6 +676,7 @@
 				E54827AD1F190F8E005BEC40 /* PhotoCollection.storyboard in Resources */,
 				E5819BB91EC9B2CA00B5B33F /* Main.storyboard in Resources */,
 				E5819BB81EC9B2CA00B5B33F /* LaunchScreen.storyboard in Resources */,
+				CE0864351F27D98A00F9D10E /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,17 +746,22 @@
 				E5328F781F161F840033A8EB /* PhotoCollectionModulePresenter.m in Sources */,
 				E5B9527B1F151B1E00081C83 /* AuthorizationModuleAssembly.m in Sources */,
 				E5328F7A1F161F840033A8EB /* PhotoCollectionModuleViewController.m in Sources */,
+				CE0864321F27D98A00F9D10E /* SettingsModuleInteractor.m in Sources */,
 				E5819B8C1EC9A24E00B5B33F /* main.m in Sources */,
+				CE0864341F27D98A00F9D10E /* SettingsModuleRouter.m in Sources */,
 				E54FBB761F1387E30052F6CE /* TabBarModuleViewController.m in Sources */,
 				E5328F5A1F1612C20033A8EB /* TabEntity.m in Sources */,
 				E5B9527F1F151B1E00081C83 /* AuthorizationModuleViewController.m in Sources */,
+				CE0864371F27D98A00F9D10E /* SettingsModuleViewController.m in Sources */,
 				E54827B11F191233005BEC40 /* PhotoCollectionCell.m in Sources */,
 				E54FBB751F1387E30052F6CE /* TabBarModuleRouter.m in Sources */,
 				E54FBB731F1387E30052F6CE /* TabBarModuleInteractor.m in Sources */,
+				CE0864331F27D98A00F9D10E /* SettingsModulePresenter.m in Sources */,
 				E5328F771F161F840033A8EB /* PhotoCollectionModuleInteractor.m in Sources */,
 				E54FBB741F1387E30052F6CE /* TabBarModulePresenter.m in Sources */,
 				E54FBB721F1387E30052F6CE /* TabBarModuleAssembly.m in Sources */,
 				E5328F791F161F840033A8EB /* PhotoCollectionModuleRouter.m in Sources */,
+				CE0864301F27D98A00F9D10E /* SettingsModuleAssembly.m in Sources */,
 				E5328F761F161F840033A8EB /* PhotoCollectionModuleAssembly.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

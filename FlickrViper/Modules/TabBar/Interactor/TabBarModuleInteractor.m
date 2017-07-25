@@ -31,13 +31,13 @@
     tab.image = [UIImage imageNamed: @"NewsTab"];
     tab.tabIndex = 1;
     
-//    TabEntity* tab2 = [[TabEntity alloc] init];
-//    tab2.viewController = controllers[1];
-//    tab2.title = @"Second";
-//    tab2.image = [UIImage imageNamed: @"SettingsTab"];
-//    tab2.tabIndex = 2;
+    TabEntity* tab2 = [[TabEntity alloc] init];
+    tab2.viewController = controllers[1];
+    tab2.title = @"Settings";
+    tab2.image = [UIImage imageNamed: @"SettingsTab"];
+    tab2.tabIndex = 2;
     
-    [self.output manageNewTabs: [[NSArray alloc] initWithObjects: tab, nil]];
+    [self.output manageNewTabs: [[NSArray alloc] initWithObjects: tab, tab2, nil]];
 }
 
 

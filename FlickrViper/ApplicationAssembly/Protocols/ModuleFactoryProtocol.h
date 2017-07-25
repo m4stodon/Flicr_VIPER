@@ -10,10 +10,11 @@
 @import Foundation;
 
 
+@class ModuleFactory;
 @class TabBarModuleAssembly;
 @class AuthorizationModuleAssembly;
 @class PhotoCollectionModuleAssembly;
-@class ModuleFactory;
+@class SettingsModuleAssembly;
 
 
 @protocol ModuleFactoryProtocol <NSObject>
@@ -21,5 +22,6 @@
 - (TabBarModuleAssembly*)tabBarModule;
 - (AuthorizationModuleAssembly*)authorizationModule;
 - (PhotoCollectionModuleAssembly*)photoCollectionModule;
+- (SettingsModuleAssembly*)settingsModule;
 
 @end

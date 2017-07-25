@@ -17,6 +17,9 @@
 #import "PhotoCollectionModuleInput.h"
 #import "PhotoCollectionModuleOutput.h"
 
+#import "SettingsModuleInput.h"
+#import "SettingsModuleOutput.h"
+
 
 @interface AuthorizationModuleRouter() <TabBarModuleOutput>
 
@@ -31,10 +34,16 @@
 - (void)routeToMainAppScreen {
     // Setup tabBar
     self.tabBarModule = [ModuleFactory openTabBarModuleWithOutputHandler: self];
+    
     // Setup tabs for module
     id<PhotoCollectionModuleInput> photoCollectionModule = [ModuleFactory openPhotoCollectionModuleWithOutputHandler: nil];
     UIViewController* photoCollectionViewController = [photoCollectionModule photoCollectionModuleRootViewController];
-    [self.tabBarModule addAsTabs: [NSArray arrayWithObject: photoCollectionViewController]];
+    
+    id<SettingsModuleInput> settingsModule = [ModuleFactory openSettingsModuleWith: nil];
+    UIViewController* settingsViewController = [settingsModule settingsModuleRootViewController];
+    
+    // Add modules
+    [self.tabBarModule addAsTabs: [NSArray arrayWithObjects: photoCollectionViewController, settingsViewController, nil]];
 }
 
 

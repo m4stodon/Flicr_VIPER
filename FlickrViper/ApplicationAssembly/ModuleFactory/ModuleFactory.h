@@ -17,12 +17,15 @@
 @protocol TabBarModuleOutput;
 @protocol PhotoCollectionModuleInput;
 @protocol PhotoCollectionModuleOutput;
+@protocol SettingsModuleInput;
+@protocol SettingsModuleOutput;
+
 
 @interface ModuleFactory : NSObject
 
 + (id<AuthorizationModuleInput>)openAuthorizationModule;
 + (id<TabBarModuleInput>)openTabBarModuleWithOutputHandler: (id<TabBarModuleOutput>)outputHandler;
 + (id<PhotoCollectionModuleInput>)openPhotoCollectionModuleWithOutputHandler: (id<PhotoCollectionModuleOutput>)outputHandler;
-//+ (UIViewController*)openSettingsModuleWith: (id)outputHandler;
++ (id<SettingsModuleInput>)openSettingsModuleWith: (id<SettingsModuleOutput>)outputHandler;
 
 @end

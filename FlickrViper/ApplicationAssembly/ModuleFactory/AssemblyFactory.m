@@ -8,7 +8,11 @@
 
 
 #import "AssemblyFactory.h"
+
 #import "TabBarModuleAssembly.h"
+#import "AuthorizationModuleAssembly.h"
+#import "PhotoCollectionModuleAssembly.h"
+#import "SettingsModuleAssembly.h"
 
 
 @implementation AssemblyFactory
@@ -24,24 +28,19 @@
 
 
 - (TabBarModuleAssembly*)tabBarModule {
-    
-    return [TyphoonDefinition withClass: [TabBarModuleAssembly class]
-                          configuration: ^(TyphoonDefinition *definition) {
-                          }];
+    return [TyphoonDefinition withClass: [TabBarModuleAssembly class]];
 }
 
 - (AuthorizationModuleAssembly*)authorizationModule {
-    
-    return [TyphoonDefinition withClass: [AuthorizationModuleAssembly class]
-                          configuration: ^(TyphoonDefinition *definition) {
-                          }];
+    return [TyphoonDefinition withClass: [AuthorizationModuleAssembly class]];
 }
 
 - (PhotoCollectionModuleAssembly*)photoCollectionModule {
-    
-    return [TyphoonDefinition withClass: [PhotoCollectionModuleAssembly class]
-                          configuration: ^(TyphoonDefinition *definition) {
-                          }];
+    return [TyphoonDefinition withClass: [PhotoCollectionModuleAssembly class]];
+}
+
+- (SettingsModuleAssembly*)settingsModule {
+    return [TyphoonDefinition withClass: [SettingsModuleAssembly class]];
 }
 
 @end

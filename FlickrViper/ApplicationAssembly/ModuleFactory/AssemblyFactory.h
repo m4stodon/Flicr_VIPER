@@ -7,12 +7,9 @@
 //
 
 
-#import <Foundation/Foundation.h>
+@import Foundation;
+@import Typhoon;
 
-
-#import "TabBarModuleAssembly.h"
-#import "AuthorizationModuleAssembly.h"
-#import "PhotoCollectionModuleAssembly.h"
 #import "ModuleFactoryProtocol.h"
 
 
