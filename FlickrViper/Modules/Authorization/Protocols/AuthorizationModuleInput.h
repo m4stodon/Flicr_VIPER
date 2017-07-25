@@ -12,6 +12,6 @@
 
 @protocol AuthorizationModuleInput <NSObject>
 
-
+- (UIViewController*)rootViewController;
 
 @end

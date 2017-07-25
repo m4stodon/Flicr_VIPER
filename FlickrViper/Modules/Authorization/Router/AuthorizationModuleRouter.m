@@ -8,30 +8,43 @@
 
 
 #import "AuthorizationModuleRouter.h"
-
-@import UIKit;
-@import Typhoon;
-
 #import "PhotoCollectionModulePresenter.h"
 #import "ModuleFactory.h"
 
-#import <objc/runtime.h>
+#import "TabBarModuleInput.h"
+#import "TabBarModuleOutput.h"
+
+#import "PhotoCollectionModuleInput.h"
+#import "PhotoCollectionModuleOutput.h"
+
+
+@interface AuthorizationModuleRouter() <TabBarModuleOutput>
+
+@property (strong, nonatomic) id<TabBarModuleInput> tabBarModule;
+
+@end
 
 
 @implementation AuthorizationModuleRouter
 
-- (void)routeToMainAppScreen {    
-    // Activate module assembly to factorize the modules
-    id moduleFactoryAccessor = ((ModuleFactory*)self.moduleFactory).activated;
-    // Factorize module and activate
-    PhotoCollectionModuleAssembly*  photoCollectionModuleAssembly = [[moduleFactoryAccessor photoCollectionModule] activated];
-    // Get module view
-    PhotoCollectionModulePresenter* photoCollectionPresenter      = [photoCollectionModuleAssembly photoCollectionPresenter];
-    
-    UIViewController* destinationVC = photoCollectionPresenter.view;
-    // Route to the view
-    [self.transitionHandler pushVC: destinationVC];
+
+- (void)routeToMainAppScreen {
+    // Setup tabBar
+    self.tabBarModule = [ModuleFactory openTabBarModuleWithOutputHandler: self];
+    // Setup tabs for module
+    id<PhotoCollectionModuleInput> photoCollectionModule = [ModuleFactory openPhotoCollectionModuleWithOutputHandler: nil];
+    UIViewController* photoCollectionViewController = [photoCollectionModule photoCollectionModuleRootViewController];
+    [self.tabBarModule addAsTabs: [NSArray arrayWithObject: photoCollectionViewController]];
 }
 
+
+#pragma mark - TabBarModuleOutput
+
+
+- (void)tabBarModuleRootViewController:(UIViewController *)viewController {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.transitionHandler pushVC: viewController];
+    });
+}
 
 @end

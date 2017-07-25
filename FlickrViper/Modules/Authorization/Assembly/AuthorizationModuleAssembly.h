@@ -18,11 +18,7 @@
 @class AuthorizationModulePresenter;
 
 
-
-
 @interface AuthorizationModuleAssembly : TyphoonAssembly
-
-@property (nonatomic, strong) id<ModuleFactoryProtocol> moduleFactory;
 
 - (AuthorizationModulePresenter*)authPresenter;
 

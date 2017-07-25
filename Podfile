@@ -9,7 +9,7 @@ target 'FlickrViper' do
 
   pod 'Typhoon'
   pod 'FMDB'
-  pod 'Realm'
+  #pod 'Realm'
 
 
 end

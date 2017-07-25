@@ -18,7 +18,7 @@
 
 
 
-@interface AuthorizationModulePresenter: NSObject <AuthorizationModuleOutput, AuthorizationModuleInput, AuthorizationModuleInteractorOutput, AuthorizationModuleViewOutput>
+@interface AuthorizationModulePresenter: NSObject <AuthorizationModuleInput, AuthorizationModuleInteractorOutput, AuthorizationModuleViewOutput>
 
 
 @property (nonatomic, weak)   id<AuthorizationModuleViewInput>       view;

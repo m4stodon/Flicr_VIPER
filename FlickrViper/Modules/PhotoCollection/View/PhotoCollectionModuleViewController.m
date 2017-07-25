@@ -14,9 +14,9 @@
 
 @implementation PhotoCollectionModuleViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.output setupView];
 }
 
 

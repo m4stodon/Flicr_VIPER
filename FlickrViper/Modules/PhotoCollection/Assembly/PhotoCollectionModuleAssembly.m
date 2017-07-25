@@ -58,6 +58,8 @@
                                }
                             configuration: ^(TyphoonFactoryDefinition *definition) {
                                 
+                                definition.scope = TyphoonScopeSingleton;
+                                
                                 // inject presenter as view output
                                 [definition injectProperty: @selector(output)
                                                       with: [self photoCollectionPresenter]];
@@ -99,6 +101,8 @@
     return [TyphoonDefinition withClass: [PhotoCollectionModulePresenter class]
                           configuration: ^(TyphoonDefinition *definition) {
                               
+                              definition.scope = TyphoonScopeSingleton;
+                              
                               // inject view into presenter
                               // inject interactor into presenter
                               // inject router into presenter
@@ -121,18 +125,18 @@
                                                     with: [self photoCollectionViewWithStoryBoard]]; // UI WITH STORYBOARDS
                               
                               // inject module factory
-                              [definition injectProperty: @selector(moduleFactory)
-                                                    with: [self moduleFactoryAssembly]];
+//                              [definition injectProperty: @selector(moduleFactory)
+//                                                    with: [self moduleFactoryAssembly]];
                           }];
 }
 
-- (ModuleFactory*)moduleFactoryAssembly {
-    // Assemble unified Module Factory
-    // We can create and use defined Module Factories for each module to restrict access to other modules from this
-    return [TyphoonDefinition withClass: [ModuleFactory class]
-                          configuration: ^(TyphoonDefinition *definition) {
-                              definition.scope = TyphoonScopeSingleton;
-                          }];
-}
+//- (ModuleFactory*)moduleFactoryAssembly {
+//    // Assemble unified Module Factory
+//    // We can create and use defined Module Factories for each module to restrict access to other modules from this
+//    return [TyphoonDefinition withClass: [ModuleFactory class]
+//                          configuration: ^(TyphoonDefinition *definition) {
+//                              definition.scope = TyphoonScopeSingleton;
+//                          }];
+//}
 
 @end

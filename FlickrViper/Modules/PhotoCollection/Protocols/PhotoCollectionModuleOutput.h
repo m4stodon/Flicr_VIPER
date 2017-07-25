@@ -12,6 +12,6 @@
 
 @protocol PhotoCollectionModuleOutput <NSObject>
 
-- (UIViewController*)rootViewController;
+
 
 @end

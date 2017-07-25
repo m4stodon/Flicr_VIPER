@@ -94,6 +94,8 @@
     return [TyphoonDefinition withClass: [AuthorizationModulePresenter class]
                           configuration: ^(TyphoonDefinition *definition) {
                               
+                              definition.scope = TyphoonScopeSingleton;
+                              
                               // inject view into presenter
                               // inject interactor into presenter
                               // inject router into presenter

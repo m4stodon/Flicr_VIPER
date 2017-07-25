@@ -18,12 +18,14 @@
 
 
 
-@interface PhotoCollectionModulePresenter: NSObject <PhotoCollectionModuleOutput, PhotoCollectionModuleInput, PhotoCollectionModuleInteractorOutput, PhotoCollectionModuleViewOutput>
+@interface PhotoCollectionModulePresenter: NSObject
+<PhotoCollectionModuleInput, PhotoCollectionModuleInteractorOutput, PhotoCollectionModuleViewOutput>
 
 
 @property (nonatomic, weak)   id<PhotoCollectionModuleViewInput>       view;
 @property (nonatomic, strong) id<PhotoCollectionModuleInteractorInput> interactor;
 @property (nonatomic, strong) id<PhotoCollectionModuleRouterInput>     router;
+@property (nonatomic, strong) id<PhotoCollectionModuleOutput>          output;
 
 
 @end

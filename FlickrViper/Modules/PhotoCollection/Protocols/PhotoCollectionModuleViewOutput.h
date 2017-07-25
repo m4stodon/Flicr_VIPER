@@ -12,6 +12,6 @@
 
 @protocol PhotoCollectionModuleViewOutput <NSObject>
 
-- (void)setupView;
+- (void)viewSetupCallback;
 
 @end

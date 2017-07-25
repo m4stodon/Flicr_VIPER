@@ -14,34 +14,26 @@
 #import "TabBarModulePresenter.h"
 #import "TabBarModuleRouter.h"
 
-#import "FVApplicationAssembly.h"
-
 // protocols
 #import "TabBarModuleInput.h"
 #import "TabBarModuleOutput.h"
 #import "ModuleFactoryProtocol.h"
 
 
-@interface TabBarModuleAssembly()
-
-@end
-
 @implementation TabBarModuleAssembly
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        NSLog(@"\n\nTabBarModuleAssembly::Init\n");
-    }
-    return self;
-}
 
-- (id<TabBarModuleOutput>)assembleTabBarModuleWithModuleFactory: (id<ModuleFactoryProtocol>)factory {
-    return [self presenter];
-}
+//- (instancetype)init
+//{
+//    self = [super init];
+//    if (self) {
+//        NSLog(@"\n\nTabBarModuleAssembly::Init\n");
+//    }
+//    return self;
+//}
 
-- (UIStoryboard *)storyBoardWithName: (NSString *)name {
+
+- (UIStoryboard *)tabBarStoryBoardWithName: (NSString *)name {
     
     return [TyphoonDefinition withClass: [UIStoryboard class]
                           configuration: ^(TyphoonDefinition *definition) {
@@ -54,9 +46,9 @@
 }
 
 // UI WITH STORYBOARDS
-- (TabBarModuleViewController*)viewWithStoryBoard {
+- (TabBarModuleViewController*)tabBarViewWithStoryBoard {
     
-    return [TyphoonDefinition withFactory: [self storyBoardWithName: @"Main"]
+    return [TyphoonDefinition withFactory: [self tabBarStoryBoardWithName: @"Main"]
                                  selector: @selector(instantiateViewControllerWithIdentifier:)
                                parameters: ^(TyphoonMethod *factoryMethod) {
                                    
@@ -65,9 +57,12 @@
                                }
                             configuration: ^(TyphoonFactoryDefinition *definition) {
                                 
+                                // THIS IS MUST HAVE SETTING - WHICH RESTRICTS REPEATEDLY INSTANTIATING OF VIEW CONTROLLERS
+                                definition.scope = TyphoonScopeSingleton;
+                                
                                 // inject presenter as view output
                                 [definition injectProperty: @selector(output)
-                                                      with: [self presenter]];
+                                                      with: [self tabBarPresenter]];
                             }];
 }
 
@@ -83,14 +78,14 @@
 //                          }];
 //}
 
-- (TabBarModuleInteractor*)interactor {
+- (TabBarModuleInteractor*)tabBarInteractor {
     
     return [TyphoonDefinition withClass: [TabBarModuleInteractor class]
                           configuration: ^(TyphoonDefinition *definition) {
                               
                               // inject presenter as interactor output
                               [definition injectProperty: @selector(output)
-                                                    with: [self presenter]];
+                                                    with: [self tabBarPresenter]];
                               
                               // inject <ModuleFactoryProtocol> compatible object
                               // to instantiate tabs modules
@@ -101,31 +96,33 @@
                           }];
 }
 
-- (TabBarModulePresenter*)presenter {
+- (TabBarModulePresenter*)tabBarPresenter {
     
     return [TyphoonDefinition withClass: [TabBarModulePresenter class]
                           configuration: ^(TyphoonDefinition *definition) {
+                              
+                              definition.scope = TyphoonScopeSingleton;
                               
                               // inject view into presenter
                               // inject interactor into presenter
                               // inject router into presenter
                               [definition injectProperty: @selector(view)
-                                                    with: [self viewWithStoryBoard]]; // UI WITH STORYBOARDS
+                                                    with: [self tabBarViewWithStoryBoard]]; // UI WITH STORYBOARDS
                               [definition injectProperty: @selector(interactor)
-                                                    with: [self interactor]];
+                                                    with: [self tabBarInteractor]];
                               [definition injectProperty: @selector(router)
-                                                    with: [self router]];
+                                                    with: [self tabBarRouter]];
                           }];
 }
 
-- (TabBarModuleRouter*)router {
+- (TabBarModuleRouter*)tabBarRouter {
     
     return [TyphoonDefinition withClass: [TabBarModuleRouter class]
                           configuration: ^(TyphoonDefinition *definition) {
                               
                               // inject view as router action handler
                               [definition injectProperty: @selector(transitionHandler)
-                                                    with: [self viewWithStoryBoard]]; // UI WITH STORYBOARDS
+                                                    with: [self tabBarViewWithStoryBoard]]; // UI WITH STORYBOARDS
                           }];
 }
 

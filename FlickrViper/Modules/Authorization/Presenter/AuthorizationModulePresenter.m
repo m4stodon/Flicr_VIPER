@@ -43,6 +43,9 @@
 #pragma mark - AuthorizationModuleInput
 
 
+- (UIViewController*)rootViewController {
+    return (UIViewController*)self.view;
+}
 
 
 #pragma mark - AuthorizationModuleOutput

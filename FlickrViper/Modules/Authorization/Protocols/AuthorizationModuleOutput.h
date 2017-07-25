@@ -13,6 +13,5 @@
 
 @protocol AuthorizationModuleOutput <NSObject>
 
-- (UIViewController*)rootViewController;
 
 @end

@@ -27,34 +27,22 @@
 @implementation FVApplicationAssembly
 
 
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-        NSLog(@"  ---  FVApplicationAssembly instantiated  ---  ");
-    }
-    return self;
-}
+//- (instancetype)init {
+//    self = [super init];
+//    if (self) {
+//        NSLog(@"  ---  FVApplicationAssembly instantiated  ---  ");
+//    }
+//    return self;
+//}
 
 
 - (FVAppDelegate *)appDelegate {
-    NSLog(@"*********appDelegate***************");
     return [TyphoonDefinition withClass: [FVAppDelegate class]
                           configuration: ^(TyphoonDefinition *definition) {
                               // Inject AppDelegate with root view controller
                               [definition injectProperty: @selector(rootViewController)
-                                                    with: [self openAuthorizationModule]];
+                                                    with: [[ModuleFactory openAuthorizationModule] rootViewController]];
                           }];
-}
-
-
-#pragma mark - ModuleFactoryProtocol
-
-
-- (UIViewController*)openAuthorizationModule {
-    ModuleFactory* moduleFactory = [[ModuleFactory new] activated];
-    AuthorizationModuleAssembly* authorizationModuleAssembly = [[moduleFactory authorizationModule] activated];
-    AuthorizationModulePresenter* authorizationPresenter     = [authorizationModuleAssembly authPresenter];
-    return (UIViewController*)authorizationPresenter.view;
 }
 
 

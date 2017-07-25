@@ -25,9 +25,9 @@
 #pragma mark - TabBarModuleViewOutput
 
 
-- (void)viewSetupCallback: (BOOL)successfull {    
+- (void)viewSetupCallback: (BOOL)successfull {
     if (successfull) {
-        [self.moduleOutput rootViewController: (UIViewController*)self.view];
+        [self.output tabBarModuleRootViewController: (UIViewController*)self.view];
     }
 }
 

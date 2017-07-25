@@ -13,11 +13,13 @@
 @protocol TabBarModuleInput;
 @protocol TabBarModuleOutput;
 @protocol ModuleFactoryProtocol;
+@class TabBarModulePresenter;
 
 
 @interface TabBarModuleAssembly : TyphoonAssembly
 
 
-- (id<TabBarModuleOutput>)assembleTabBarModuleWithModuleFactory: (id<ModuleFactoryProtocol>)factory;
+- (TabBarModulePresenter*)tabBarPresenter;
+
 
 @end

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B90B6B29DD5620CE7F6F4AEA /* Pods_FlickrViper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D0C8B4501FF85FA0A828E7 /* Pods_FlickrViper.framework */; };
+		CE60B2161F24151200099669 /* AssemblyFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = CE60B2151F24151200099669 /* AssemblyFactory.m */; };
 		E5328F5A1F1612C20033A8EB /* TabEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = E5328F591F1612C20033A8EB /* TabEntity.m */; };
 		E5328F761F161F840033A8EB /* PhotoCollectionModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = E5328F601F161F840033A8EB /* PhotoCollectionModuleAssembly.m */; };
 		E5328F771F161F840033A8EB /* PhotoCollectionModuleInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = E5328F641F161F840033A8EB /* PhotoCollectionModuleInteractor.m */; };
@@ -41,6 +42,9 @@
 		80D0C8B4501FF85FA0A828E7 /* Pods_FlickrViper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlickrViper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B98AE677D153303B28DCFD6 /* Pods-FlickrViper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickrViper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlickrViper/Pods-FlickrViper.debug.xcconfig"; sourceTree = "<group>"; };
 		B8F2EC9A2E46F3D10CBCC779 /* Pods-FlickrViper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickrViper.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlickrViper/Pods-FlickrViper.release.xcconfig"; sourceTree = "<group>"; };
+		CE0864111F24FB7B00F9D10E /* ModuleFactoryProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleFactoryProtocol.h; sourceTree = "<group>"; };
+		CE60B2141F24151200099669 /* AssemblyFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssemblyFactory.h; sourceTree = "<group>"; };
+		CE60B2151F24151200099669 /* AssemblyFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssemblyFactory.m; sourceTree = "<group>"; };
 		E5328F591F1612C20033A8EB /* TabEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabEntity.m; sourceTree = "<group>"; };
 		E5328F5F1F161F840033A8EB /* PhotoCollectionModuleAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PhotoCollectionModuleAssembly.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		E5328F601F161F840033A8EB /* PhotoCollectionModuleAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PhotoCollectionModuleAssembly.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
@@ -88,7 +92,6 @@
 		E54FBB661F1387E30052F6CE /* TabBarModuleRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarModuleRouter.m; sourceTree = "<group>"; };
 		E54FBB681F1387E30052F6CE /* TabBarModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarModuleViewController.h; sourceTree = "<group>"; };
 		E54FBB691F1387E30052F6CE /* TabBarModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarModuleViewController.m; sourceTree = "<group>"; };
-		E54FBB771F13885B0052F6CE /* ModuleFactoryProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleFactoryProtocol.h; sourceTree = "<group>"; };
 		E54FBB781F1399B00052F6CE /* ModuleFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleFactory.h; sourceTree = "<group>"; };
 		E54FBB791F1399B00052F6CE /* ModuleFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleFactory.m; sourceTree = "<group>"; };
 		E5819B871EC9A24E00B5B33F /* FlickrViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -254,6 +257,8 @@
 		E54FBB261F1387DD0052F6CE /* ModuleFactory */ = {
 			isa = PBXGroup;
 			children = (
+				CE60B2141F24151200099669 /* AssemblyFactory.h */,
+				CE60B2151F24151200099669 /* AssemblyFactory.m */,
 				E54FBB781F1399B00052F6CE /* ModuleFactory.h */,
 				E54FBB791F1399B00052F6CE /* ModuleFactory.m */,
 			);
@@ -263,8 +268,8 @@
 		E54FBB271F1387DD0052F6CE /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				CE0864111F24FB7B00F9D10E /* ModuleFactoryProtocol.h */,
 				E54FBB281F1387DD0052F6CE /* FlickrViperTransitionHandlerProtocol.h */,
-				E54FBB771F13885B0052F6CE /* ModuleFactoryProtocol.h */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -273,9 +278,9 @@
 			isa = PBXGroup;
 			children = (
 				E54FBB2C1F1387E30052F6CE /* Authorization */,
+				E54FBB501F1387E30052F6CE /* TabBar */,
 				E5328F5D1F161F840033A8EB /* PhotoCollection */,
 				E54FBB4F1F1387E30052F6CE /* Settings */,
-				E54FBB501F1387E30052F6CE /* TabBar */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -477,9 +482,9 @@
 			isa = PBXGroup;
 			children = (
 				E5B9526E1F151B1E00081C83 /* AuthorizationModuleInput.h */,
+				E5B952711F151B1E00081C83 /* AuthorizationModuleOutput.h */,
 				E5B9526F1F151B1E00081C83 /* AuthorizationModuleInteractorInput.h */,
 				E5B952701F151B1E00081C83 /* AuthorizationModuleInteractorOutput.h */,
-				E5B952711F151B1E00081C83 /* AuthorizationModuleOutput.h */,
 				E5B952721F151B1E00081C83 /* AuthorizationModuleRouterInput.h */,
 				E5B952731F151B1E00081C83 /* AuthorizationModuleViewInput.h */,
 				E5B952741F151B1E00081C83 /* AuthorizationModuleViewOutput.h */,
@@ -637,6 +642,7 @@
 				E54827B51F191362005BEC40 /* PhotoCardEntity.m in Sources */,
 				E5B9527D1F151B1E00081C83 /* AuthorizationModulePresenter.m in Sources */,
 				E54FBB291F1387DD0052F6CE /* FVAppDelegate.m in Sources */,
+				CE60B2161F24151200099669 /* AssemblyFactory.m in Sources */,
 				E5B9527E1F151B1E00081C83 /* AuthorizationModuleRouter.m in Sources */,
 				E5328F781F161F840033A8EB /* PhotoCollectionModulePresenter.m in Sources */,
 				E5B9527B1F151B1E00081C83 /* AuthorizationModuleAssembly.m in Sources */,

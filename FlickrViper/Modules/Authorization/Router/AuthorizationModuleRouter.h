@@ -8,6 +8,8 @@
 
 
 @import Foundation;
+@import UIKit;
+@import Typhoon;
 
 #import "AuthorizationModuleRouterInput.h"
 #import "FlickrViperTransitionHandlerProtocol.h"

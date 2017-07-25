@@ -16,8 +16,11 @@
 @protocol PhotoCollectionModuleViewOutput;
 
 
-@interface PhotoCollectionModuleViewController : UIViewController <PhotoCollectionModuleViewInput, FlickrViperTransitionHandlerProtocol>
+@interface PhotoCollectionModuleViewController : UIViewController
+<PhotoCollectionModuleViewInput, FlickrViperTransitionHandlerProtocol>
+
 
 @property (nonatomic, strong) id<PhotoCollectionModuleViewOutput> output;
+
 
 @end

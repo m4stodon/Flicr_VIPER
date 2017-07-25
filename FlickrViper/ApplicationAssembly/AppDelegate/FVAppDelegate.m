@@ -16,8 +16,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    NSLog(@"FVAppDelegate::didFinishLaunching");
-
     self.window = [[UIWindow alloc] initWithFrame: UIScreen.mainScreen.bounds];
     if (self.rootViewController == nil) {
         self.rootViewController = [[UIViewController alloc] init];

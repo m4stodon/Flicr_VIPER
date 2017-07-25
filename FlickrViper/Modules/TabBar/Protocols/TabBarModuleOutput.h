@@ -12,8 +12,6 @@
 
 @protocol TabBarModuleOutput <NSObject>
 
-
-- (void)rootViewController: (UIViewController*)viewController;
-
+- (void)tabBarModuleRootViewController: (UIViewController*)viewController;
 
 @end

@@ -7,17 +7,22 @@
 //
 
 
-#import <Foundation/Foundation.h>
+@import Foundation;
+@import UIKit;
 
 
-#import "TabBarModuleAssembly.h"
-#import "AuthorizationModuleAssembly.h"
-#import "PhotoCollectionModuleAssembly.h"
-#import "ModuleFactoryProtocol.h"
+@protocol AuthorizationModuleInput;
+@protocol AuthorizationModuleOutput;
+@protocol TabBarModuleInput;
+@protocol TabBarModuleOutput;
+@protocol PhotoCollectionModuleInput;
+@protocol PhotoCollectionModuleOutput;
 
+@interface ModuleFactory : NSObject
 
-@interface ModuleFactory : TyphoonAssembly <ModuleFactoryProtocol>
-    
++ (id<AuthorizationModuleInput>)openAuthorizationModule;
++ (id<TabBarModuleInput>)openTabBarModuleWithOutputHandler: (id<TabBarModuleOutput>)outputHandler;
++ (id<PhotoCollectionModuleInput>)openPhotoCollectionModuleWithOutputHandler: (id<PhotoCollectionModuleOutput>)outputHandler;
+//+ (UIViewController*)openSettingsModuleWith: (id)outputHandler;
 
-    
 @end

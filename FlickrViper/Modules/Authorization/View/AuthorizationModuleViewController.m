@@ -34,8 +34,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"AuthorizationModuleViewController::ViewDidLoad::%@", self);
-    
     [self setupIndicators];
     [self setupTextFields];
     [self setupButtons];

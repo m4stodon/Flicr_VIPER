@@ -15,33 +15,22 @@
 
 
 #pragma mark - PhotoCollectionModuleInteractorOutput
-// Output from interactor
 
-- (void)manageNewTabs: (NSArray *)tabs {
-    [self.view setupTabs: tabs];
-}
+
+
 
 
 #pragma mark - PhotoCollectionModuleViewOutput
-// Output from view
 
-- (void)setupView {
-    [self.interactor getTabs];
+
+
+
+
+#pragma mark - PhotoCollectionModuleInput
+
+
+- (UIViewController *)photoCollectionModuleRootViewController {
+    return (UIViewController*)self.view;
 }
-
-
-#pragma mark - PhotoCollectionModuleOutput
-// Output from module
-
-
-
-#pragma mark - PhotoCollectionModuleOutput
-// Input to this module
-
-- (UIViewController*)rootViewController {
-    // cast to supress de warnin'
-    return (UIViewController *)self.view;
-}
-
 
 @end

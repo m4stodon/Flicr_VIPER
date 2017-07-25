@@ -9,6 +9,6 @@
 
 @protocol PhotoCollectionModuleInput <NSObject>
 
-
+- (UIViewController*)photoCollectionModuleRootViewController;
 
 @end
