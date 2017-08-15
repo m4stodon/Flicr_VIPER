@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Photo Card Details Module View Controller-->
+        <scene sceneID="U6I-5a-0Ef">
+            <objects>
+                <viewController storyboardIdentifier="PhotoCardDetailsModuleViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gVn-Ab-qb9" customClass="PhotoCardDetailsModuleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="i7B-YR-I2I"/>
+                        <viewControllerLayoutGuide type="bottom" id="hlv-Kn-VbW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UOM-Yq-Utp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fallout4_AwesomeTales1" translatesAutoresizingMaskIntoConstraints="NO" id="p1S-ZM-Sg6">
+                                <rect key="frame" x="0.0" y="109" width="375" height="417"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CsR-qA-BBk">
+                                <rect key="frame" x="157" y="60" width="61.5" height="32.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dis iz discription" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Loh-Bi-Z35">
+                                <rect key="frame" x="16" y="542" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="p1S-ZM-Sg6" firstAttribute="top" secondItem="CsR-qA-BBk" secondAttribute="bottom" constant="16" id="7fE-cM-Rpb"/>
+                            <constraint firstAttribute="trailing" secondItem="p1S-ZM-Sg6" secondAttribute="trailing" id="B1o-cN-e2S"/>
+                            <constraint firstItem="Loh-Bi-Z35" firstAttribute="left" secondItem="UOM-Yq-Utp" secondAttribute="left" constant="16" id="DR7-D4-uqz"/>
+                            <constraint firstItem="CsR-qA-BBk" firstAttribute="centerX" secondItem="UOM-Yq-Utp" secondAttribute="centerX" id="Mfu-NT-Tqd"/>
+                            <constraint firstItem="CsR-qA-BBk" firstAttribute="top" secondItem="i7B-YR-I2I" secondAttribute="bottom" constant="40" id="Vdt-Wj-57I"/>
+                            <constraint firstItem="hlv-Kn-VbW" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Loh-Bi-Z35" secondAttribute="bottom" constant="16" id="X73-2b-cmX"/>
+                            <constraint firstItem="Loh-Bi-Z35" firstAttribute="centerX" secondItem="UOM-Yq-Utp" secondAttribute="centerX" id="Y35-3N-VAa"/>
+                            <constraint firstItem="Loh-Bi-Z35" firstAttribute="top" secondItem="p1S-ZM-Sg6" secondAttribute="bottom" constant="16" id="YR4-br-0PK"/>
+                            <constraint firstAttribute="right" relation="greaterThanOrEqual" secondItem="Loh-Bi-Z35" secondAttribute="right" constant="16" id="tCy-r6-eDO"/>
+                            <constraint firstItem="p1S-ZM-Sg6" firstAttribute="centerX" secondItem="UOM-Yq-Utp" secondAttribute="centerX" id="u7I-Yb-u0m"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="Loh-Bi-Z35" id="yLd-ZT-X8f"/>
+                        <outlet property="frontPageImageView" destination="p1S-ZM-Sg6" id="33F-PN-YiA"/>
+                        <outlet property="titleLabel" destination="CsR-qA-BBk" id="bnB-oO-IB8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MtI-TK-8YL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1356" y="-15.742128935532236"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Fallout4_AwesomeTales1" width="299" height="417"/>
+    </resources>
+</document>

@@ -13,6 +13,7 @@
 #import "AuthorizationModuleAssembly.h"
 #import "PhotoCollectionModuleAssembly.h"
 #import "SettingsModuleAssembly.h"
+#import "PhotoCardDetailsModuleAssembly.h"
 
 
 @implementation AssemblyFactory
@@ -37,6 +38,10 @@
 
 - (PhotoCollectionModuleAssembly*)photoCollectionModule {
     return [TyphoonDefinition withClass: [PhotoCollectionModuleAssembly class]];
+}
+
+- (PhotoCardDetailsModuleAssembly*)photoCardDetailsModule {
+    return [TyphoonDefinition withClass: [PhotoCardDetailsModuleAssembly class]];
 }
 
 - (SettingsModuleAssembly*)settingsModule {

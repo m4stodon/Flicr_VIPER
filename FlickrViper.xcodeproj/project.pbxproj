@@ -15,6 +15,13 @@
 		CE0864351F27D98A00F9D10E /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE08642B1F27D98A00F9D10E /* Settings.storyboard */; };
 		CE0864371F27D98A00F9D10E /* SettingsModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE08642F1F27D98A00F9D10E /* SettingsModuleViewController.m */; };
 		CE60B2161F24151200099669 /* AssemblyFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = CE60B2151F24151200099669 /* AssemblyFactory.m */; };
+		CECD51541F3629B200D634E3 /* PhotoCollectionFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CECD51531F3629B200D634E3 /* PhotoCollectionFlowLayout.m */; };
+		CECD51761F36439200D634E3 /* PhotoCardDetailsModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = CECD51581F36439200D634E3 /* PhotoCardDetailsModuleAssembly.m */; };
+		CECD51781F36439200D634E3 /* PhotoCardDetailsModuleInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = CECD515E1F36439200D634E3 /* PhotoCardDetailsModuleInteractor.m */; };
+		CECD51791F36439200D634E3 /* PhotoCardDetailsModulePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CECD51611F36439200D634E3 /* PhotoCardDetailsModulePresenter.m */; };
+		CECD517A1F36439200D634E3 /* PhotoCardDetailsModuleRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = CECD516C1F36439200D634E3 /* PhotoCardDetailsModuleRouter.m */; };
+		CECD517C1F36439200D634E3 /* PhotoCardDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECD51711F36439200D634E3 /* PhotoCardDetails.storyboard */; };
+		CECD517E1F36439200D634E3 /* PhotoCardDetailsModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CECD51751F36439200D634E3 /* PhotoCardDetailsModuleViewController.m */; };
 		E5328F5A1F1612C20033A8EB /* TabEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = E5328F591F1612C20033A8EB /* TabEntity.m */; };
 		E5328F761F161F840033A8EB /* PhotoCollectionModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = E5328F601F161F840033A8EB /* PhotoCollectionModuleAssembly.m */; };
 		E5328F771F161F840033A8EB /* PhotoCollectionModuleInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = E5328F641F161F840033A8EB /* PhotoCollectionModuleInteractor.m */; };
@@ -69,6 +76,26 @@
 		CE08642F1F27D98A00F9D10E /* SettingsModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsModuleViewController.m; sourceTree = "<group>"; };
 		CE60B2141F24151200099669 /* AssemblyFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssemblyFactory.h; sourceTree = "<group>"; };
 		CE60B2151F24151200099669 /* AssemblyFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssemblyFactory.m; sourceTree = "<group>"; };
+		CECD51521F3629B200D634E3 /* PhotoCollectionFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoCollectionFlowLayout.h; path = FlowLayout/PhotoCollectionFlowLayout.h; sourceTree = "<group>"; };
+		CECD51531F3629B200D634E3 /* PhotoCollectionFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotoCollectionFlowLayout.m; path = FlowLayout/PhotoCollectionFlowLayout.m; sourceTree = "<group>"; };
+		CECD51571F36439200D634E3 /* PhotoCardDetailsModuleAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCardDetailsModuleAssembly.h; sourceTree = "<group>"; };
+		CECD51581F36439200D634E3 /* PhotoCardDetailsModuleAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCardDetailsModuleAssembly.m; sourceTree = "<group>"; };
+		CECD515D1F36439200D634E3 /* PhotoCardDetailsModuleInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCardDetailsModuleInteractor.h; sourceTree = "<group>"; };
+		CECD515E1F36439200D634E3 /* PhotoCardDetailsModuleInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCardDetailsModuleInteractor.m; sourceTree = "<group>"; };
+		CECD51601F36439200D634E3 /* PhotoCardDetailsModulePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCardDetailsModulePresenter.h; sourceTree = "<group>"; };
+		CECD51611F36439200D634E3 /* PhotoCardDetailsModulePresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCardDetailsModulePresenter.m; sourceTree = "<group>"; };
+		CECD51631F36439200D634E3 /* PhotoCardDetailsModuleInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCardDetailsModuleInput.h; sourceTree = "<group>"; };
+		CECD51641F36439200D634E3 /* PhotoCardDetailsModuleInteractorInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCardDetailsModuleInteractorInput.h; sourceTree = "<group>"; };
+		CECD51651F36439200D634E3 /* PhotoCardDetailsModuleInteractorOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCardDetailsModuleInteractorOutput.h; sourceTree = "<group>"; };
+		CECD51661F36439200D634E3 /* PhotoCardDetailsModuleOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCardDetailsModuleOutput.h; sourceTree = "<group>"; };
+		CECD51671F36439200D634E3 /* PhotoCardDetailsModuleRouterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCardDetailsModuleRouterInput.h; sourceTree = "<group>"; };
+		CECD51681F36439200D634E3 /* PhotoCardDetailsModuleViewInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCardDetailsModuleViewInput.h; sourceTree = "<group>"; };
+		CECD51691F36439200D634E3 /* PhotoCardDetailsModuleViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCardDetailsModuleViewOutput.h; sourceTree = "<group>"; };
+		CECD516B1F36439200D634E3 /* PhotoCardDetailsModuleRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCardDetailsModuleRouter.h; sourceTree = "<group>"; };
+		CECD516C1F36439200D634E3 /* PhotoCardDetailsModuleRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCardDetailsModuleRouter.m; sourceTree = "<group>"; };
+		CECD51711F36439200D634E3 /* PhotoCardDetails.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PhotoCardDetails.storyboard; sourceTree = "<group>"; };
+		CECD51741F36439200D634E3 /* PhotoCardDetailsModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCardDetailsModuleViewController.h; sourceTree = "<group>"; };
+		CECD51751F36439200D634E3 /* PhotoCardDetailsModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCardDetailsModuleViewController.m; sourceTree = "<group>"; };
 		E5328F591F1612C20033A8EB /* TabEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabEntity.m; sourceTree = "<group>"; };
 		E5328F5F1F161F840033A8EB /* PhotoCollectionModuleAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PhotoCollectionModuleAssembly.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		E5328F601F161F840033A8EB /* PhotoCollectionModuleAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PhotoCollectionModuleAssembly.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
@@ -253,6 +280,79 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		CECD51551F36439200D634E3 /* PhotoCardDetails */ = {
+			isa = PBXGroup;
+			children = (
+				CECD51561F36439200D634E3 /* Assembly */,
+				CECD515C1F36439200D634E3 /* Interactor */,
+				CECD515F1F36439200D634E3 /* Presenter */,
+				CECD51621F36439200D634E3 /* Protocols */,
+				CECD516A1F36439200D634E3 /* Router */,
+				CECD516D1F36439200D634E3 /* View */,
+			);
+			path = PhotoCardDetails;
+			sourceTree = "<group>";
+		};
+		CECD51561F36439200D634E3 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				CECD51571F36439200D634E3 /* PhotoCardDetailsModuleAssembly.h */,
+				CECD51581F36439200D634E3 /* PhotoCardDetailsModuleAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		CECD515C1F36439200D634E3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CECD515D1F36439200D634E3 /* PhotoCardDetailsModuleInteractor.h */,
+				CECD515E1F36439200D634E3 /* PhotoCardDetailsModuleInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CECD515F1F36439200D634E3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CECD51601F36439200D634E3 /* PhotoCardDetailsModulePresenter.h */,
+				CECD51611F36439200D634E3 /* PhotoCardDetailsModulePresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CECD51621F36439200D634E3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CECD51631F36439200D634E3 /* PhotoCardDetailsModuleInput.h */,
+				CECD51641F36439200D634E3 /* PhotoCardDetailsModuleInteractorInput.h */,
+				CECD51651F36439200D634E3 /* PhotoCardDetailsModuleInteractorOutput.h */,
+				CECD51661F36439200D634E3 /* PhotoCardDetailsModuleOutput.h */,
+				CECD51671F36439200D634E3 /* PhotoCardDetailsModuleRouterInput.h */,
+				CECD51681F36439200D634E3 /* PhotoCardDetailsModuleViewInput.h */,
+				CECD51691F36439200D634E3 /* PhotoCardDetailsModuleViewOutput.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CECD516A1F36439200D634E3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CECD516B1F36439200D634E3 /* PhotoCardDetailsModuleRouter.h */,
+				CECD516C1F36439200D634E3 /* PhotoCardDetailsModuleRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CECD516D1F36439200D634E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CECD51711F36439200D634E3 /* PhotoCardDetails.storyboard */,
+				CECD51741F36439200D634E3 /* PhotoCardDetailsModuleViewController.h */,
+				CECD51751F36439200D634E3 /* PhotoCardDetailsModuleViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E5328F5D1F161F840033A8EB /* PhotoCollection */ = {
 			isa = PBXGroup;
 			children = (
@@ -334,6 +434,8 @@
 				E54827AC1F190F8E005BEC40 /* PhotoCollection.storyboard */,
 				E54827AE1F191233005BEC40 /* PhotoCollectionCell.h */,
 				E54827AF1F191233005BEC40 /* PhotoCollectionCell.m */,
+				CECD51521F3629B200D634E3 /* PhotoCollectionFlowLayout.h */,
+				CECD51531F3629B200D634E3 /* PhotoCollectionFlowLayout.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -385,6 +487,7 @@
 				E54FBB2C1F1387E30052F6CE /* Authorization */,
 				E54FBB501F1387E30052F6CE /* TabBar */,
 				E5328F5D1F161F840033A8EB /* PhotoCollection */,
+				CECD51551F36439200D634E3 /* PhotoCardDetails */,
 				CE0864121F27D98A00F9D10E /* Settings */,
 			);
 			path = Modules;
@@ -677,6 +780,7 @@
 				E5819BB91EC9B2CA00B5B33F /* Main.storyboard in Resources */,
 				E5819BB81EC9B2CA00B5B33F /* LaunchScreen.storyboard in Resources */,
 				CE0864351F27D98A00F9D10E /* Settings.storyboard in Resources */,
+				CECD517C1F36439200D634E3 /* PhotoCardDetails.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -739,30 +843,36 @@
 				E54FBB7A1F1399B00052F6CE /* ModuleFactory.m in Sources */,
 				E54FBB2A1F1387DD0052F6CE /* FVApplicationAssembly.m in Sources */,
 				E54827B51F191362005BEC40 /* PhotoCardEntity.m in Sources */,
+				CECD517E1F36439200D634E3 /* PhotoCardDetailsModuleViewController.m in Sources */,
 				E5B9527D1F151B1E00081C83 /* AuthorizationModulePresenter.m in Sources */,
 				E54FBB291F1387DD0052F6CE /* FVAppDelegate.m in Sources */,
 				CE60B2161F24151200099669 /* AssemblyFactory.m in Sources */,
 				E5B9527E1F151B1E00081C83 /* AuthorizationModuleRouter.m in Sources */,
 				E5328F781F161F840033A8EB /* PhotoCollectionModulePresenter.m in Sources */,
 				E5B9527B1F151B1E00081C83 /* AuthorizationModuleAssembly.m in Sources */,
+				CECD51761F36439200D634E3 /* PhotoCardDetailsModuleAssembly.m in Sources */,
 				E5328F7A1F161F840033A8EB /* PhotoCollectionModuleViewController.m in Sources */,
 				CE0864321F27D98A00F9D10E /* SettingsModuleInteractor.m in Sources */,
 				E5819B8C1EC9A24E00B5B33F /* main.m in Sources */,
 				CE0864341F27D98A00F9D10E /* SettingsModuleRouter.m in Sources */,
 				E54FBB761F1387E30052F6CE /* TabBarModuleViewController.m in Sources */,
+				CECD51791F36439200D634E3 /* PhotoCardDetailsModulePresenter.m in Sources */,
 				E5328F5A1F1612C20033A8EB /* TabEntity.m in Sources */,
 				E5B9527F1F151B1E00081C83 /* AuthorizationModuleViewController.m in Sources */,
 				CE0864371F27D98A00F9D10E /* SettingsModuleViewController.m in Sources */,
 				E54827B11F191233005BEC40 /* PhotoCollectionCell.m in Sources */,
 				E54FBB751F1387E30052F6CE /* TabBarModuleRouter.m in Sources */,
+				CECD517A1F36439200D634E3 /* PhotoCardDetailsModuleRouter.m in Sources */,
 				E54FBB731F1387E30052F6CE /* TabBarModuleInteractor.m in Sources */,
 				CE0864331F27D98A00F9D10E /* SettingsModulePresenter.m in Sources */,
 				E5328F771F161F840033A8EB /* PhotoCollectionModuleInteractor.m in Sources */,
+				CECD51781F36439200D634E3 /* PhotoCardDetailsModuleInteractor.m in Sources */,
 				E54FBB741F1387E30052F6CE /* TabBarModulePresenter.m in Sources */,
 				E54FBB721F1387E30052F6CE /* TabBarModuleAssembly.m in Sources */,
 				E5328F791F161F840033A8EB /* PhotoCollectionModuleRouter.m in Sources */,
 				CE0864301F27D98A00F9D10E /* SettingsModuleAssembly.m in Sources */,
 				E5328F761F161F840033A8EB /* PhotoCollectionModuleAssembly.m in Sources */,
+				CECD51541F3629B200D634E3 /* PhotoCollectionFlowLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -882,7 +992,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8B98AE677D153303B28DCFD6 /* Pods-FlickrViper.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZXLCAVT38S;
 				INFOPLIST_FILE = FlickrViper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -895,7 +1004,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B8F2EC9A2E46F3D10CBCC779 /* Pods-FlickrViper.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZXLCAVT38S;
 				INFOPLIST_FILE = FlickrViper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

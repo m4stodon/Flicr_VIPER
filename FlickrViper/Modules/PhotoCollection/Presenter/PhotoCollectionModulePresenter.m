@@ -8,6 +8,7 @@
 
 
 @import UIKit;
+@class PhotoCardEntity;
 #import "PhotoCollectionModulePresenter.h"
 
 
@@ -23,7 +24,13 @@
 #pragma mark - PhotoCollectionModuleViewOutput
 
 
+- (void)viewSetupCallback {
+    
+}
 
+- (void)didSelectItem:(PhotoCardEntity *)item {
+    [self.router showDetailsFor: item];
+}
 
 
 #pragma mark - PhotoCollectionModuleInput

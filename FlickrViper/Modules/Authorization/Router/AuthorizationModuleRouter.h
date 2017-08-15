@@ -8,9 +8,6 @@
 
 
 @import Foundation;
-@import UIKit;
-@import Typhoon;
-
 #import "AuthorizationModuleRouterInput.h"
 #import "FlickrViperTransitionHandlerProtocol.h"
 #import "ModuleFactoryProtocol.h"
@@ -18,8 +15,7 @@
 
 @interface AuthorizationModuleRouter : NSObject <AuthorizationModuleRouterInput>
 
-// STRONG REFERENCE on the view
-@property (nonatomic, strong) id<FlickrViperTransitionHandlerProtocol> transitionHandler;
-@property (nonatomic, strong) id<ModuleFactoryProtocol> moduleFactory;
+@property (nonatomic, weak) id<FlickrViperTransitionHandlerProtocol> transitionHandler;
+@property (nonatomic, weak) id<ModuleFactoryProtocol> moduleFactory;
 
 @end

@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,23 +22,94 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zw3-2f-rhC">
-                                <rect key="frame" x="155.5" y="323" width="63.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kolyan Kolyanich" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zw3-2f-rhC">
+                                <rect key="frame" x="123.5" y="186" width="128.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYD-7o-hqB">
+                                <rect key="frame" x="16" y="231" width="96.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hide my presence" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAd-AP-9fs">
+                                <rect key="frame" x="16" y="276" width="138.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wifi-only" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6I-wu-HME">
+                                <rect key="frame" x="16" y="366" width="69" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cache in photo library" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0IP-GF-s40">
+                                <rect key="frame" x="16" y="321" width="168" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UNF-2J-4YF">
+                                <rect key="frame" x="310" y="316" width="51" height="31"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y3y-Yt-Hp8">
+                                <rect key="frame" x="310" y="271" width="51" height="31"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yur-2c-iko">
+                                <rect key="frame" x="310" y="226" width="51" height="31"/>
+                            </switch>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kolyan_avatar" translatesAutoresizingMaskIntoConstraints="NO" id="huf-sM-a90">
+                                <rect key="frame" x="112.5" y="28" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="iE6-zD-o2B"/>
+                                    <constraint firstAttribute="width" secondItem="huf-sM-a90" secondAttribute="height" multiplier="1:1" id="q3R-JF-7Kd"/>
+                                </constraints>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gaC-xq-VKA">
+                                <rect key="frame" x="310" y="361" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="zw3-2f-rhC" firstAttribute="centerX" secondItem="Z7R-mn-88d" secondAttribute="centerX" id="LbY-mO-hrM"/>
-                            <constraint firstItem="zw3-2f-rhC" firstAttribute="centerY" secondItem="Z7R-mn-88d" secondAttribute="centerY" id="OBY-Sl-xur"/>
+                            <constraint firstItem="y6I-wu-HME" firstAttribute="top" secondItem="0IP-GF-s40" secondAttribute="bottom" constant="24" id="7ts-EA-ufy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="y3y-Yt-Hp8" secondAttribute="trailing" id="7vi-hp-dkM"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="XYD-7o-hqB" secondAttribute="leading" id="Acx-Y1-Uel"/>
+                            <constraint firstItem="zw3-2f-rhC" firstAttribute="centerX" secondItem="Z7R-mn-88d" secondAttribute="centerX" id="CRQ-Cs-51n"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Yur-2c-iko" secondAttribute="trailing" id="Fap-6y-piJ"/>
+                            <constraint firstItem="xAd-AP-9fs" firstAttribute="leading" secondItem="XYD-7o-hqB" secondAttribute="leading" id="GFS-KX-IR6"/>
+                            <constraint firstItem="y3y-Yt-Hp8" firstAttribute="centerY" secondItem="xAd-AP-9fs" secondAttribute="centerY" id="Lrh-fT-Hbn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UNF-2J-4YF" secondAttribute="trailing" id="UzP-wy-Uom"/>
+                            <constraint firstItem="0IP-GF-s40" firstAttribute="leading" secondItem="xAd-AP-9fs" secondAttribute="leading" id="X7w-tE-wXA"/>
+                            <constraint firstItem="UNF-2J-4YF" firstAttribute="centerY" secondItem="0IP-GF-s40" secondAttribute="centerY" id="XbY-WS-XP4"/>
+                            <constraint firstItem="gaC-xq-VKA" firstAttribute="centerY" secondItem="y6I-wu-HME" secondAttribute="centerY" id="awN-5w-lI2"/>
+                            <constraint firstItem="0IP-GF-s40" firstAttribute="top" secondItem="xAd-AP-9fs" secondAttribute="bottom" constant="24" id="fFW-Qs-83O"/>
+                            <constraint firstItem="zw3-2f-rhC" firstAttribute="top" secondItem="huf-sM-a90" secondAttribute="bottom" constant="8" id="hq6-2H-Tcc"/>
+                            <constraint firstItem="huf-sM-a90" firstAttribute="top" secondItem="MIX-T9-jEA" secondAttribute="bottom" constant="8" id="ljD-vn-9An"/>
+                            <constraint firstItem="XYD-7o-hqB" firstAttribute="top" secondItem="zw3-2f-rhC" secondAttribute="bottom" constant="24" id="o38-Ii-VIM"/>
+                            <constraint firstItem="huf-sM-a90" firstAttribute="centerX" secondItem="Z7R-mn-88d" secondAttribute="centerX" id="okD-sr-axM"/>
+                            <constraint firstItem="xAd-AP-9fs" firstAttribute="top" secondItem="XYD-7o-hqB" secondAttribute="bottom" constant="24" id="rCI-hD-nyK"/>
+                            <constraint firstItem="Yur-2c-iko" firstAttribute="centerY" secondItem="XYD-7o-hqB" secondAttribute="centerY" id="sXr-yV-bF2"/>
+                            <constraint firstItem="0IP-GF-s40" firstAttribute="leading" secondItem="y6I-wu-HME" secondAttribute="leading" id="stE-1F-vCv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gaC-xq-VKA" secondAttribute="trailing" id="txv-ij-kQ3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="avatar" destination="huf-sM-a90" id="gTa-Mj-FZt"/>
+                        <outlet property="cacheSwitch" destination="UNF-2J-4YF" id="C0e-xy-v35"/>
+                        <outlet property="notificationsSwitch" destination="Yur-2c-iko" id="z3z-0a-kug"/>
+                        <outlet property="presenceSwitch" destination="y3y-Yt-Hp8" id="UBS-E5-5ie"/>
+                        <outlet property="wifiOnlySwitch" destination="gaC-xq-VKA" id="vuo-Mf-pJe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p3L-4L-z6d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1796" y="-190"/>
+            <point key="canvasLocation" x="1796" y="-190.25487256371815"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="kolyan_avatar" width="120" height="160"/>
+    </resources>
 </document>

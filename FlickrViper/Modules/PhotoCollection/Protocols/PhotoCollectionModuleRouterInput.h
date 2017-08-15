@@ -8,10 +8,11 @@
 
 
 @import Foundation;
+@class PhotoCardEntity;
 
 
 @protocol PhotoCollectionModuleRouterInput <NSObject>
 
-
+- (void)showDetailsFor: (PhotoCardEntity*)photoCard;
 
 @end

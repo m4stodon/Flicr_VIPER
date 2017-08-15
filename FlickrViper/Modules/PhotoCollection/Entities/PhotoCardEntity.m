@@ -13,11 +13,12 @@
 @implementation PhotoCardEntity
 
 
-- (instancetype)initWith: (UIImage*)image text: (NSString*)text {
+- (instancetype)initWith: (UIImage*)image text: (NSString*)text descriptionText: (NSString*)description {
     self = [super init];
     if (self) {
         self.photo = image;
         self.label = text;
+        self.descriptionText = description;
     }
     return self;
 }

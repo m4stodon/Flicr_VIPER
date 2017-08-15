@@ -15,6 +15,7 @@
 @class AuthorizationModuleAssembly;
 @class PhotoCollectionModuleAssembly;
 @class SettingsModuleAssembly;
+@class PhotoCardDetailsModuleAssembly;
 
 
 @protocol ModuleFactoryProtocol <NSObject>
@@ -22,6 +23,7 @@
 - (TabBarModuleAssembly*)tabBarModule;
 - (AuthorizationModuleAssembly*)authorizationModule;
 - (PhotoCollectionModuleAssembly*)photoCollectionModule;
+- (PhotoCardDetailsModuleAssembly*)photoCardDetailsModule;
 - (SettingsModuleAssembly*)settingsModule;
 
 @end

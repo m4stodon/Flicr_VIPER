@@ -19,6 +19,8 @@
 @protocol PhotoCollectionModuleOutput;
 @protocol SettingsModuleInput;
 @protocol SettingsModuleOutput;
+@protocol PhotoCardDetailsModuleInput;
+@protocol PhotoCardDetailsModuleOutput;
 
 
 @interface ModuleFactory : NSObject
@@ -27,5 +29,6 @@
 + (id<TabBarModuleInput>)openTabBarModuleWithOutputHandler: (id<TabBarModuleOutput>)outputHandler;
 + (id<PhotoCollectionModuleInput>)openPhotoCollectionModuleWithOutputHandler: (id<PhotoCollectionModuleOutput>)outputHandler;
 + (id<SettingsModuleInput>)openSettingsModuleWith: (id<SettingsModuleOutput>)outputHandler;
++ (id<PhotoCardDetailsModuleInput>)openPhotoCardDetailsModuleWithOutputHandler: (id<PhotoCardDetailsModuleOutput>)outputHandler;
 
 @end

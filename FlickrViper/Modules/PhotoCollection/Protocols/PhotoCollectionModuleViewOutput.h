@@ -8,10 +8,12 @@
 
 
 @import Foundation;
+@class PhotoCardEntity;
 
 
 @protocol PhotoCollectionModuleViewOutput <NSObject>
 
 - (void)viewSetupCallback;
+- (void)didSelectItem: (PhotoCardEntity*)item;
 
 @end

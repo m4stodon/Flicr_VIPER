@@ -16,6 +16,7 @@
 
 @protocol FlickrViperTransitionHandlerProtocol <NSObject>
 
+@optional
 - (void)pushVC: (UIViewController*)viewController;
 //
 //- (void)openModuleUsingFactory: (id<FlickrViperModuleFactoryProtocol>)factory

@@ -15,6 +15,6 @@
 
 @protocol PhotoCollectionModuleViewInput <NSObject>
 
-- (void)setupTabs: (NSArray<id<TabEntity>>*)tabs;
+
 
 @end

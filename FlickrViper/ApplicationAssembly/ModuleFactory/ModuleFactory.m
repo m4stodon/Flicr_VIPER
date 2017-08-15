@@ -30,6 +30,11 @@
 #import "SettingsModuleAssembly.h"
 #import "SettingsModulePresenter.h"
 //
+#import "PhotoCardDetailsModuleInput.h"
+#import "PhotoCardDetailsModuleOutput.h"
+#import "PhotoCardDetailsModuleAssembly.h"
+#import "PhotoCardDetailsModulePresenter.h"
+//
 
 
 
@@ -65,6 +70,14 @@
     PhotoCollectionModulePresenter* photoCollectionModulePresenter = [photoCollectionModuleAssembly photoCollectionPresenter];
     photoCollectionModulePresenter.output = outputHandler;
     return photoCollectionModulePresenter;
+}
+
++ (id<PhotoCardDetailsModuleInput>)openPhotoCardDetailsModuleWithOutputHandler:(id<PhotoCardDetailsModuleOutput>)outputHandler {
+    AssemblyFactory* moduleFactory = [[AssemblyFactory new] activated];
+    PhotoCardDetailsModuleAssembly*  photoCardDetailsModuleAssembly  = [[moduleFactory photoCardDetailsModule] activated];
+    PhotoCardDetailsModulePresenter* photoCardDetailsModulePresenter = [photoCardDetailsModuleAssembly photoCardDetailsPresenter];
+    photoCardDetailsModulePresenter.output = outputHandler;
+    return photoCardDetailsModulePresenter;
 }
 
 + (id<SettingsModuleInput>)openSettingsModuleWith: (id<SettingsModuleOutput>)outputHandler {

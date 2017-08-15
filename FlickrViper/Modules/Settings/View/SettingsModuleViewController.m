@@ -12,6 +12,17 @@
 #import "TabEntity.h"
 
 
+@interface SettingsModuleViewController()
+
+@property (weak, nonatomic) IBOutlet UIImageView *avatar;
+
+@property (weak, nonatomic) IBOutlet UISwitch *notificationsSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *presenceSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *cacheSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *wifiOnlySwitch;
+
+@end
+
 @implementation SettingsModuleViewController
 
 
