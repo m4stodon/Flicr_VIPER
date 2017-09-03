@@ -15,8 +15,6 @@
 
 
 @interface PhotoCollectionModuleInteractor : NSObject <PhotoCollectionModuleInteractorInput>
-
-@property (weak, nonatomic)   id<ModuleFactoryProtocol>        moduleFactory;
-@property (strong, nonatomic) id<PhotoCollectionModuleInteractorOutput> output;
-
+@property (weak, nonatomic) id<ModuleFactoryProtocol> moduleFactory;
+@property (weak, nonatomic) id<PhotoCollectionModuleInteractorOutput> output;
 @end

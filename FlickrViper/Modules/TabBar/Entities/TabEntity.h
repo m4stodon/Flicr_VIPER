@@ -12,12 +12,9 @@
 
 
 @interface TabEntity : NSObject
-
 @property NSString   *title;
 @property UIImage    *image;
 @property NSUInteger tabIndex;
 @property NSString   *badge;
 @property UIViewController* viewController;
-
-
 @end

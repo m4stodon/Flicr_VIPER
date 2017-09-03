@@ -13,26 +13,13 @@
 #import "PhotoCollectionModuleInteractor.h"
 #import "PhotoCollectionModulePresenter.h"
 #import "PhotoCollectionModuleRouter.h"
-#import "ModuleFactory.h"
 
 // protocols
 #import "PhotoCollectionModuleInput.h"
 #import "PhotoCollectionModuleOutput.h"
-#import "ModuleFactoryProtocol.h"
 
 
 @implementation PhotoCollectionModuleAssembly
-
-
-//- (instancetype)init
-//{
-//    self = [super init];
-//    if (self) {
-//        NSLog(@"PhotoCollectionModuleAssembly::Init");
-//    }
-//    return self;
-//}
-
 
 - (UIStoryboard *)photoCollectionStoryBoardWithName: (NSString *)name {
     
@@ -66,18 +53,6 @@
                             }];
 }
 
-// UI FROM CODE
-//- (PhotoCollectionModuleViewController*)view {
-//
-//    return [TyphoonDefinition withClass: [PhotoCollectionModuleViewController class]
-//                          configuration: ^(TyphoonDefinition *definition) {
-//
-//                              // inject presenter as view output
-//                              [definition injectProperty: @selector(output)
-//                                                    with: [self presenter]];
-//                          }];
-//}
-
 - (PhotoCollectionModuleInteractor*)photoCollectionInteractor {
     
     return [TyphoonDefinition withClass: [PhotoCollectionModuleInteractor class]
@@ -86,13 +61,6 @@
                               // inject presenter as interactor output
                               [definition injectProperty: @selector(output)
                                                     with: [self photoCollectionPresenter]];
-                              
-                              // inject <ModuleFactoryProtocol> compatible object
-                              // to instantiate tabs modules
-                              //if(self.moduleFactory) {
-                              //    [definition injectProperty: @selector(moduleFactory)
-                              //                          with: self.moduleFactory];
-                              //}
                           }];
 }
 
@@ -107,7 +75,7 @@
                               // inject interactor into presenter
                               // inject router into presenter
                               [definition injectProperty: @selector(view)
-                                                    with: [self photoCollectionViewWithStoryBoard]]; // UI WITH STORYBOARDS
+                                                    with: [self photoCollectionViewWithStoryBoard]];
                               [definition injectProperty: @selector(interactor)
                                                     with: [self photoCollectionInteractor]];
                               [definition injectProperty: @selector(router)
@@ -122,21 +90,8 @@
                               
                               // inject view as router action handler
                               [definition injectProperty: @selector(transitionHandler)
-                                                    with: [self photoCollectionViewWithStoryBoard]]; // UI WITH STORYBOARDS
-                              
-                              // inject module factory
-//                              [definition injectProperty: @selector(moduleFactory)
-//                                                    with: [self moduleFactoryAssembly]];
+                                                    with: [self photoCollectionViewWithStoryBoard]];
                           }];
 }
-
-//- (ModuleFactory*)moduleFactoryAssembly {
-//    // Assemble unified Module Factory
-//    // We can create and use defined Module Factories for each module to restrict access to other modules from this
-//    return [TyphoonDefinition withClass: [ModuleFactory class]
-//                          configuration: ^(TyphoonDefinition *definition) {
-//                              definition.scope = TyphoonScopeSingleton;
-//                          }];
-//}
 
 @end

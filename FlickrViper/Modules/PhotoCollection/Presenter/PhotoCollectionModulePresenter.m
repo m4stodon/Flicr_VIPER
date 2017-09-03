@@ -8,7 +8,7 @@
 
 
 @import UIKit;
-@class PhotoCardEntity;
+#import "PhotoCardEntity.h"
 #import "PhotoCollectionModulePresenter.h"
 
 
@@ -18,14 +18,16 @@
 #pragma mark - PhotoCollectionModuleInteractorOutput
 
 
-
+- (void)handle: (NSArray<PhotoCardEntity *> *)photoCards {
+    [self.view show: photoCards];
+}
 
 
 #pragma mark - PhotoCollectionModuleViewOutput
 
 
 - (void)viewSetupCallback {
-    
+    [self.interactor fetchData];
 }
 
 - (void)didSelectItem:(PhotoCardEntity *)item {

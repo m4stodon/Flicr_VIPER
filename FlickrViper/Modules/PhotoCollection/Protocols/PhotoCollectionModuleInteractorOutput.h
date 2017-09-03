@@ -6,12 +6,10 @@
 //  Copyright © 2017 Yermakov. All rights reserved.
 //
 
-
-@import Foundation;
-
+@class PhotoCardEntity;
 
 @protocol PhotoCollectionModuleInteractorOutput <NSObject>
 
-- (void)manageNewTabs: (NSArray*)tabs;
+- (void)handle: (NSArray<PhotoCardEntity*>*)photoCards;
 
 @end

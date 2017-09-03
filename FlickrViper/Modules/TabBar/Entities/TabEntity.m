@@ -8,7 +8,6 @@
 
 
 #import "TabEntity.h"
-#import <Foundation/Foundation.h>
 
 
 @implementation TabEntity

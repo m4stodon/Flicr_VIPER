@@ -19,11 +19,7 @@
 
 
 @interface AuthorizationModulePresenter: NSObject <AuthorizationModuleInput, AuthorizationModuleInteractorOutput, AuthorizationModuleViewOutput>
-
-
 @property (nonatomic, weak)   id<AuthorizationModuleViewInput>       view;
 @property (nonatomic, strong) id<AuthorizationModuleInteractorInput> interactor;
 @property (nonatomic, strong) id<AuthorizationModuleRouterInput>     router;
-
-
 @end

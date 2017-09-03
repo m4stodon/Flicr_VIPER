@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B90B6B29DD5620CE7F6F4AEA /* Pods_FlickrViper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D0C8B4501FF85FA0A828E7 /* Pods_FlickrViper.framework */; };
+		0103CA9E065E4FAC9A1C76F7 /* Pods_FlickrViper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E6B2BC88F32B7B18839B13 /* Pods_FlickrViper.framework */; };
 		CE0864301F27D98A00F9D10E /* SettingsModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0864151F27D98A00F9D10E /* SettingsModuleAssembly.m */; };
 		CE0864321F27D98A00F9D10E /* SettingsModuleInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = CE08641B1F27D98A00F9D10E /* SettingsModuleInteractor.m */; };
 		CE0864331F27D98A00F9D10E /* SettingsModulePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE08641E1F27D98A00F9D10E /* SettingsModulePresenter.m */; };
 		CE0864341F27D98A00F9D10E /* SettingsModuleRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0864291F27D98A00F9D10E /* SettingsModuleRouter.m */; };
 		CE0864351F27D98A00F9D10E /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE08642B1F27D98A00F9D10E /* Settings.storyboard */; };
 		CE0864371F27D98A00F9D10E /* SettingsModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE08642F1F27D98A00F9D10E /* SettingsModuleViewController.m */; };
+		CE0E1FDD1F5C1DF60008654E /* CoreDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0E1FD91F5C1DE20008654E /* CoreDataService.m */; };
+		CE0E1FDE1F5C1DFD0008654E /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0E1FDC1F5C1DE20008654E /* CoreDataStack.m */; };
+		CE0E1FDF1F5C1E050008654E /* Magazine+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0E1FD61F5C1DE20008654E /* Magazine+CoreDataProperties.m */; };
+		CE0E1FE01F5C1E080008654E /* Magazine+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0E1FD41F5C1DE20008654E /* Magazine+CoreDataClass.m */; };
+		CE0E1FE11F5C1E0B0008654E /* Category+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0E1FD11F5C1DE20008654E /* Category+CoreDataProperties.m */; };
+		CE0E1FE21F5C1E0F0008654E /* Category+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0E1FCF1F5C1DE20008654E /* Category+CoreDataClass.m */; };
 		CE60B2161F24151200099669 /* AssemblyFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = CE60B2151F24151200099669 /* AssemblyFactory.m */; };
 		CECD51541F3629B200D634E3 /* PhotoCollectionFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CECD51531F3629B200D634E3 /* PhotoCollectionFlowLayout.m */; };
 		CECD51761F36439200D634E3 /* PhotoCardDetailsModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = CECD51581F36439200D634E3 /* PhotoCardDetailsModuleAssembly.m */; };
@@ -52,7 +58,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		80D0C8B4501FF85FA0A828E7 /* Pods_FlickrViper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlickrViper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67E6B2BC88F32B7B18839B13 /* Pods_FlickrViper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlickrViper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B98AE677D153303B28DCFD6 /* Pods-FlickrViper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickrViper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlickrViper/Pods-FlickrViper.debug.xcconfig"; sourceTree = "<group>"; };
 		B8F2EC9A2E46F3D10CBCC779 /* Pods-FlickrViper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickrViper.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlickrViper/Pods-FlickrViper.release.xcconfig"; sourceTree = "<group>"; };
 		CE0864111F24FB7B00F9D10E /* ModuleFactoryProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleFactoryProtocol.h; sourceTree = "<group>"; };
@@ -74,6 +80,19 @@
 		CE08642B1F27D98A00F9D10E /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		CE08642E1F27D98A00F9D10E /* SettingsModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsModuleViewController.h; sourceTree = "<group>"; };
 		CE08642F1F27D98A00F9D10E /* SettingsModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsModuleViewController.m; sourceTree = "<group>"; };
+		CE0E1FCB1F5C1DE20008654E /* DataBase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataBase.xcdatamodel; sourceTree = "<group>"; };
+		CE0E1FCE1F5C1DE20008654E /* Category+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Category+CoreDataClass.h"; sourceTree = "<group>"; };
+		CE0E1FCF1F5C1DE20008654E /* Category+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Category+CoreDataClass.m"; sourceTree = "<group>"; };
+		CE0E1FD01F5C1DE20008654E /* Category+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Category+CoreDataProperties.h"; sourceTree = "<group>"; };
+		CE0E1FD11F5C1DE20008654E /* Category+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Category+CoreDataProperties.m"; sourceTree = "<group>"; };
+		CE0E1FD31F5C1DE20008654E /* Magazine+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Magazine+CoreDataClass.h"; sourceTree = "<group>"; };
+		CE0E1FD41F5C1DE20008654E /* Magazine+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Magazine+CoreDataClass.m"; sourceTree = "<group>"; };
+		CE0E1FD51F5C1DE20008654E /* Magazine+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Magazine+CoreDataProperties.h"; sourceTree = "<group>"; };
+		CE0E1FD61F5C1DE20008654E /* Magazine+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Magazine+CoreDataProperties.m"; sourceTree = "<group>"; };
+		CE0E1FD81F5C1DE20008654E /* CoreDataService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataService.h; sourceTree = "<group>"; };
+		CE0E1FD91F5C1DE20008654E /* CoreDataService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataService.m; sourceTree = "<group>"; };
+		CE0E1FDB1F5C1DE20008654E /* CoreDataStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
+		CE0E1FDC1F5C1DE20008654E /* CoreDataStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
 		CE60B2141F24151200099669 /* AssemblyFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssemblyFactory.h; sourceTree = "<group>"; };
 		CE60B2151F24151200099669 /* AssemblyFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssemblyFactory.m; sourceTree = "<group>"; };
 		CECD51521F3629B200D634E3 /* PhotoCollectionFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoCollectionFlowLayout.h; path = FlowLayout/PhotoCollectionFlowLayout.h; sourceTree = "<group>"; };
@@ -175,7 +194,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B90B6B29DD5620CE7F6F4AEA /* Pods_FlickrViper.framework in Frameworks */,
+				0103CA9E065E4FAC9A1C76F7 /* Pods_FlickrViper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,7 +204,7 @@
 		4787586EB5CC4A8481CD221D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				80D0C8B4501FF85FA0A828E7 /* Pods_FlickrViper.framework */,
+				67E6B2BC88F32B7B18839B13 /* Pods_FlickrViper.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -197,6 +216,14 @@
 				B8F2EC9A2E46F3D10CBCC779 /* Pods-FlickrViper.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE053A521F5BE58100530FBD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE0E1FC91F5C1DE20008654E /* CoreData */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		CE0864121F27D98A00F9D10E /* Settings */ = {
@@ -278,6 +305,66 @@
 				CE08642F1F27D98A00F9D10E /* SettingsModuleViewController.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CE0E1FC91F5C1DE20008654E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				CE0E1FCA1F5C1DE20008654E /* DataBase.xcdatamodeld */,
+				CE0E1FCC1F5C1DE20008654E /* Models */,
+				CE0E1FD71F5C1DE20008654E /* Service */,
+				CE0E1FDA1F5C1DE20008654E /* Stack */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		CE0E1FCC1F5C1DE20008654E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE0E1FCD1F5C1DE20008654E /* Category */,
+				CE0E1FD21F5C1DE20008654E /* Magazine */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE0E1FCD1F5C1DE20008654E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				CE0E1FCE1F5C1DE20008654E /* Category+CoreDataClass.h */,
+				CE0E1FCF1F5C1DE20008654E /* Category+CoreDataClass.m */,
+				CE0E1FD01F5C1DE20008654E /* Category+CoreDataProperties.h */,
+				CE0E1FD11F5C1DE20008654E /* Category+CoreDataProperties.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		CE0E1FD21F5C1DE20008654E /* Magazine */ = {
+			isa = PBXGroup;
+			children = (
+				CE0E1FD31F5C1DE20008654E /* Magazine+CoreDataClass.h */,
+				CE0E1FD41F5C1DE20008654E /* Magazine+CoreDataClass.m */,
+				CE0E1FD51F5C1DE20008654E /* Magazine+CoreDataProperties.h */,
+				CE0E1FD61F5C1DE20008654E /* Magazine+CoreDataProperties.m */,
+			);
+			path = Magazine;
+			sourceTree = "<group>";
+		};
+		CE0E1FD71F5C1DE20008654E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CE0E1FD81F5C1DE20008654E /* CoreDataService.h */,
+				CE0E1FD91F5C1DE20008654E /* CoreDataService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CE0E1FDA1F5C1DE20008654E /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				CE0E1FDB1F5C1DE20008654E /* CoreDataStack.h */,
+				CE0E1FDC1F5C1DE20008654E /* CoreDataStack.m */,
+			);
+			path = Stack;
 			sourceTree = "<group>";
 		};
 		CECD51551F36439200D634E3 /* PhotoCardDetails */ = {
@@ -497,7 +584,6 @@
 			isa = PBXGroup;
 			children = (
 				E5B952621F151B1E00081C83 /* Assembly */,
-				E5B952651F151B1E00081C83 /* Entities */,
 				E5B952671F151B1E00081C83 /* Interactor */,
 				E5B9526A1F151B1E00081C83 /* Presenter */,
 				E5B9526D1F151B1E00081C83 /* Protocols */,
@@ -612,6 +698,7 @@
 			children = (
 				E54FBB201F1387DD0052F6CE /* ApplicationAssembly */,
 				E54FBB2B1F1387E30052F6CE /* Modules */,
+				CE053A521F5BE58100530FBD /* Services */,
 				E5819BAC1EC9B2CA00B5B33F /* Resources */,
 				E5819BAE1EC9B2CA00B5B33F /* Storyboards */,
 				E5819B8A1EC9A24E00B5B33F /* Supporting Files */,
@@ -652,13 +739,6 @@
 				E5B952641F151B1E00081C83 /* AuthorizationModuleAssembly.m */,
 			);
 			path = Assembly;
-			sourceTree = "<group>";
-		};
-		E5B952651F151B1E00081C83 /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Entities;
 			sourceTree = "<group>";
 		};
 		E5B952671F151B1E00081C83 /* Interactor */ = {
@@ -741,7 +821,7 @@
 		E5819B7F1EC9A24E00B5B33F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Yermakov;
 				TargetAttributes = {
 					E5819B861EC9A24E00B5B33F = {
@@ -793,9 +873,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FlickrViper/Pods-FlickrViper-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/Typhoon/Typhoon.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Typhoon.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -808,13 +893,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlickrViper-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EDCBC6A8EE97A4D138921039 /* [CP] Copy Pods Resources */ = {
@@ -843,14 +931,17 @@
 				E54FBB7A1F1399B00052F6CE /* ModuleFactory.m in Sources */,
 				E54FBB2A1F1387DD0052F6CE /* FVApplicationAssembly.m in Sources */,
 				E54827B51F191362005BEC40 /* PhotoCardEntity.m in Sources */,
+				CE0E1FDF1F5C1E050008654E /* Magazine+CoreDataProperties.m in Sources */,
 				CECD517E1F36439200D634E3 /* PhotoCardDetailsModuleViewController.m in Sources */,
 				E5B9527D1F151B1E00081C83 /* AuthorizationModulePresenter.m in Sources */,
 				E54FBB291F1387DD0052F6CE /* FVAppDelegate.m in Sources */,
+				CE0E1FE11F5C1E0B0008654E /* Category+CoreDataProperties.m in Sources */,
 				CE60B2161F24151200099669 /* AssemblyFactory.m in Sources */,
 				E5B9527E1F151B1E00081C83 /* AuthorizationModuleRouter.m in Sources */,
 				E5328F781F161F840033A8EB /* PhotoCollectionModulePresenter.m in Sources */,
 				E5B9527B1F151B1E00081C83 /* AuthorizationModuleAssembly.m in Sources */,
 				CECD51761F36439200D634E3 /* PhotoCardDetailsModuleAssembly.m in Sources */,
+				CE0E1FDD1F5C1DF60008654E /* CoreDataService.m in Sources */,
 				E5328F7A1F161F840033A8EB /* PhotoCollectionModuleViewController.m in Sources */,
 				CE0864321F27D98A00F9D10E /* SettingsModuleInteractor.m in Sources */,
 				E5819B8C1EC9A24E00B5B33F /* main.m in Sources */,
@@ -860,6 +951,7 @@
 				E5328F5A1F1612C20033A8EB /* TabEntity.m in Sources */,
 				E5B9527F1F151B1E00081C83 /* AuthorizationModuleViewController.m in Sources */,
 				CE0864371F27D98A00F9D10E /* SettingsModuleViewController.m in Sources */,
+				CE0E1FE01F5C1E080008654E /* Magazine+CoreDataClass.m in Sources */,
 				E54827B11F191233005BEC40 /* PhotoCollectionCell.m in Sources */,
 				E54FBB751F1387E30052F6CE /* TabBarModuleRouter.m in Sources */,
 				CECD517A1F36439200D634E3 /* PhotoCardDetailsModuleRouter.m in Sources */,
@@ -872,7 +964,9 @@
 				E5328F791F161F840033A8EB /* PhotoCollectionModuleRouter.m in Sources */,
 				CE0864301F27D98A00F9D10E /* SettingsModuleAssembly.m in Sources */,
 				E5328F761F161F840033A8EB /* PhotoCollectionModuleAssembly.m in Sources */,
+				CE0E1FE21F5C1E0F0008654E /* Category+CoreDataClass.m in Sources */,
 				CECD51541F3629B200D634E3 /* PhotoCollectionFlowLayout.m in Sources */,
+				CE0E1FDE1F5C1DFD0008654E /* CoreDataStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -908,7 +1002,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -916,7 +1012,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -956,7 +1056,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -964,7 +1066,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -997,6 +1103,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.viper.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -1009,6 +1116,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.viper.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -1034,6 +1142,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE0E1FCA1F5C1DE20008654E /* DataBase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE0E1FCB1F5C1DE20008654E /* DataBase.xcdatamodel */,
+			);
+			currentVersion = CE0E1FCB1F5C1DE20008654E /* DataBase.xcdatamodel */;
+			path = DataBase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E5819B7F1EC9A24E00B5B33F /* Project object */;
 }

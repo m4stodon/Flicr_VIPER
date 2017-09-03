@@ -22,17 +22,6 @@
 
 @implementation TabBarModuleAssembly
 
-
-//- (instancetype)init
-//{
-//    self = [super init];
-//    if (self) {
-//        NSLog(@"\n\nTabBarModuleAssembly::Init\n");
-//    }
-//    return self;
-//}
-
-
 - (UIStoryboard *)tabBarStoryBoardWithName: (NSString *)name {
     
     return [TyphoonDefinition withClass: [UIStoryboard class]
@@ -86,13 +75,6 @@
                               // inject presenter as interactor output
                               [definition injectProperty: @selector(output)
                                                     with: [self tabBarPresenter]];
-                              
-                              // inject <ModuleFactoryProtocol> compatible object
-                              // to instantiate tabs modules
-                              //if(self.moduleFactory) {
-                              //    [definition injectProperty: @selector(moduleFactory)
-                              //                          with: self.moduleFactory];
-                              //}
                           }];
 }
 
@@ -107,7 +89,7 @@
                               // inject interactor into presenter
                               // inject router into presenter
                               [definition injectProperty: @selector(view)
-                                                    with: [self tabBarViewWithStoryBoard]]; // UI WITH STORYBOARDS
+                                                    with: [self tabBarViewWithStoryBoard]];
                               [definition injectProperty: @selector(interactor)
                                                     with: [self tabBarInteractor]];
                               [definition injectProperty: @selector(router)
@@ -122,7 +104,7 @@
                               
                               // inject view as router action handler
                               [definition injectProperty: @selector(transitionHandler)
-                                                    with: [self tabBarViewWithStoryBoard]]; // UI WITH STORYBOARDS
+                                                    with: [self tabBarViewWithStoryBoard]];
                           }];
 }
 

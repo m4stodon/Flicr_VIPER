@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,34 +21,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fallout4_AwesomeTales1" translatesAutoresizingMaskIntoConstraints="NO" id="p1S-ZM-Sg6">
-                                <rect key="frame" x="0.0" y="109" width="375" height="417"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CsR-qA-BBk">
-                                <rect key="frame" x="157" y="60" width="61.5" height="32.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="27"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dis iz discription" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Loh-Bi-Z35">
-                                <rect key="frame" x="16" y="542" width="343" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e1p-SM-MNF">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fallout4_AwesomeTales1" translatesAutoresizingMaskIntoConstraints="NO" id="p1S-ZM-Sg6">
+                                        <rect key="frame" x="8" y="56.5" width="359" height="417"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CsR-qA-BBk">
+                                        <rect key="frame" x="157.5" y="16" width="60.5" height="32.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dis iz discription" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Loh-Bi-Z35">
+                                        <rect key="frame" x="32" y="489.5" width="126" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="CsR-qA-BBk" firstAttribute="top" secondItem="e1p-SM-MNF" secondAttribute="top" constant="16" id="4HW-NJ-QgA"/>
+                                    <constraint firstItem="CsR-qA-BBk" firstAttribute="centerX" secondItem="e1p-SM-MNF" secondAttribute="centerX" id="53Y-6e-pyO"/>
+                                    <constraint firstItem="p1S-ZM-Sg6" firstAttribute="leading" secondItem="e1p-SM-MNF" secondAttribute="leading" constant="8" id="D5F-iQ-mJx"/>
+                                    <constraint firstAttribute="trailing" secondItem="Loh-Bi-Z35" secondAttribute="trailing" id="GqI-pT-x4W"/>
+                                    <constraint firstItem="Loh-Bi-Z35" firstAttribute="leading" secondItem="e1p-SM-MNF" secondAttribute="leading" constant="32" id="HAs-Wc-cOv"/>
+                                    <constraint firstAttribute="bottom" secondItem="Loh-Bi-Z35" secondAttribute="bottom" constant="16" id="VCc-oU-Ssw"/>
+                                    <constraint firstItem="p1S-ZM-Sg6" firstAttribute="centerX" secondItem="e1p-SM-MNF" secondAttribute="centerX" id="WJs-ve-Ebe"/>
+                                    <constraint firstItem="Loh-Bi-Z35" firstAttribute="top" secondItem="p1S-ZM-Sg6" secondAttribute="bottom" constant="16" id="XXU-oZ-puf"/>
+                                    <constraint firstItem="p1S-ZM-Sg6" firstAttribute="top" secondItem="CsR-qA-BBk" secondAttribute="bottom" constant="8" id="qIh-aU-p6O"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="p1S-ZM-Sg6" firstAttribute="top" secondItem="CsR-qA-BBk" secondAttribute="bottom" constant="16" id="7fE-cM-Rpb"/>
-                            <constraint firstAttribute="trailing" secondItem="p1S-ZM-Sg6" secondAttribute="trailing" id="B1o-cN-e2S"/>
-                            <constraint firstItem="Loh-Bi-Z35" firstAttribute="left" secondItem="UOM-Yq-Utp" secondAttribute="left" constant="16" id="DR7-D4-uqz"/>
-                            <constraint firstItem="CsR-qA-BBk" firstAttribute="centerX" secondItem="UOM-Yq-Utp" secondAttribute="centerX" id="Mfu-NT-Tqd"/>
-                            <constraint firstItem="CsR-qA-BBk" firstAttribute="top" secondItem="i7B-YR-I2I" secondAttribute="bottom" constant="40" id="Vdt-Wj-57I"/>
-                            <constraint firstItem="hlv-Kn-VbW" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Loh-Bi-Z35" secondAttribute="bottom" constant="16" id="X73-2b-cmX"/>
-                            <constraint firstItem="Loh-Bi-Z35" firstAttribute="centerX" secondItem="UOM-Yq-Utp" secondAttribute="centerX" id="Y35-3N-VAa"/>
-                            <constraint firstItem="Loh-Bi-Z35" firstAttribute="top" secondItem="p1S-ZM-Sg6" secondAttribute="bottom" constant="16" id="YR4-br-0PK"/>
-                            <constraint firstAttribute="right" relation="greaterThanOrEqual" secondItem="Loh-Bi-Z35" secondAttribute="right" constant="16" id="tCy-r6-eDO"/>
-                            <constraint firstItem="p1S-ZM-Sg6" firstAttribute="centerX" secondItem="UOM-Yq-Utp" secondAttribute="centerX" id="u7I-Yb-u0m"/>
+                            <constraint firstItem="e1p-SM-MNF" firstAttribute="leading" secondItem="UOM-Yq-Utp" secondAttribute="leading" id="C7Q-ZG-jSX"/>
+                            <constraint firstItem="e1p-SM-MNF" firstAttribute="top" secondItem="i7B-YR-I2I" secondAttribute="bottom" id="TMZ-er-YI9"/>
+                            <constraint firstItem="hlv-Kn-VbW" firstAttribute="top" secondItem="e1p-SM-MNF" secondAttribute="bottom" id="WKd-Dq-G5b"/>
+                            <constraint firstAttribute="trailing" secondItem="e1p-SM-MNF" secondAttribute="trailing" id="ljh-W8-Azc"/>
                         </constraints>
                     </view>
                     <connections>

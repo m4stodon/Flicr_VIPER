@@ -18,12 +18,8 @@
 
 
 @interface TabBarModulePresenter: NSObject <TabBarModuleInput, TabBarModuleInteractorOutput, TabBarModuleViewOutput>
-
-
 @property (nonatomic, weak)   id<TabBarModuleViewInput>       view;
 @property (nonatomic, strong) id<TabBarModuleInteractorInput> interactor;
 @property (nonatomic, strong) id<TabBarModuleRouterInput>     router;
 @property (nonatomic, strong) id<TabBarModuleOutput>          output;
-
-
 @end

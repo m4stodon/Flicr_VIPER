@@ -8,7 +8,6 @@
 
 
 @import Foundation;
-#import "ModuleFactoryProtocol.h"
 
 
 @protocol AuthorizationModuleRouterInput <NSObject>

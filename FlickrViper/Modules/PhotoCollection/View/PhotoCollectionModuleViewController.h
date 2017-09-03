@@ -11,16 +11,10 @@
 @import UIKit;
 #import "PhotoCollectionModuleViewInput.h"
 #import "FlickrViperTransitionHandlerProtocol.h"
-
-
-@protocol PhotoCollectionModuleViewOutput;
+#import "PhotoCollectionModuleViewOutput.h"
 
 
 @interface PhotoCollectionModuleViewController : UIViewController
 <PhotoCollectionModuleViewInput, FlickrViperTransitionHandlerProtocol>
-
-
 @property (nonatomic, strong) id<PhotoCollectionModuleViewOutput> output;
-
-
 @end

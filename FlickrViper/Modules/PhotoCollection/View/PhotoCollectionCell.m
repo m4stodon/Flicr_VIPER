@@ -12,10 +12,8 @@
 
 
 @interface PhotoCollectionCell()
-
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *cellWidthConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *cellImageHeightConstraint;
-
 @end
 
 

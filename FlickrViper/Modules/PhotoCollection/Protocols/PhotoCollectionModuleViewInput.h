@@ -7,14 +7,12 @@
 //
 
 
-@import Foundation;
-
-
 @protocol TabEntity;
+@class PhotoCardEntity;
 
 
 @protocol PhotoCollectionModuleViewInput <NSObject>
 
-
+- (void)show: (NSArray<PhotoCardEntity*>*)newPhotoCards;
 
 @end

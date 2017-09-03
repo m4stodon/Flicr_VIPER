@@ -10,14 +10,10 @@
 @import Foundation;
 @import UIKit;
 #import "TabBarModuleViewInput.h"
+#import "TabBarModuleViewOutput.h"
 #import "FlickrViperTransitionHandlerProtocol.h"
 
 
-@protocol TabBarModuleViewOutput;
-
-
 @interface TabBarModuleViewController : UITabBarController <TabBarModuleViewInput, FlickrViperTransitionHandlerProtocol>
-
 @property (nonatomic, strong) id<TabBarModuleViewOutput> output;
-
 @end

@@ -20,10 +20,9 @@
     id<PhotoCardDetailsModuleInput> photoCardDetailModule = [ModuleFactory openPhotoCardDetailsModuleWithOutputHandler: nil];
     [photoCardDetailModule setupModuleWith: photoCard];
     UIViewController* photoCardDetailViewController = [photoCardDetailModule photoCardDetailsModuleRootViewController];
-    UINavigationController* navigationContainer = [[UINavigationController alloc] initWithRootViewController: photoCardDetailViewController];
     
     dispatch_async(dispatch_get_main_queue(), ^{
-        [self.transitionHandler pushVC: navigationContainer];
+        [self.transitionHandler pushVC: photoCardDetailViewController];
     });
 }
 

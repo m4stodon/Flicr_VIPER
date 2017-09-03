@@ -9,7 +9,6 @@
 
 @import UIKit;
 #import "AuthorizationModulePresenter.h"
-#import "ModuleFactoryProtocol.h"
 
 
 @implementation AuthorizationModulePresenter

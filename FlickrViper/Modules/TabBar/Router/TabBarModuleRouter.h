@@ -13,7 +13,5 @@
 
 
 @interface TabBarModuleRouter : NSObject <TabBarModuleRouterInput>
-
 @property (nonatomic, weak) id<FlickrViperTransitionHandlerProtocol> transitionHandler;
-
 @end

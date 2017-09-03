@@ -15,8 +15,6 @@
 
 
 @interface TabBarModuleInteractor : NSObject <TabBarModuleInteractorInput>
-
-@property (weak, nonatomic)   id<ModuleFactoryProtocol>        moduleFactory;
-@property (strong, nonatomic) id<TabBarModuleInteractorOutput> output;
-
+@property (weak, nonatomic) id<ModuleFactoryProtocol>        moduleFactory;
+@property (weak, nonatomic) id<TabBarModuleInteractorOutput> output;
 @end

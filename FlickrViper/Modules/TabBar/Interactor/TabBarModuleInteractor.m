@@ -9,12 +9,10 @@
 
 #import "TabBarModuleInteractor.h"
 #import "TabEntity.h"
-#import "FlickrViperTransitionHandlerProtocol.h"
+
 
 @interface TabBarModuleInteractor()
-
 @property (nonatomic, strong) NSArray<TabEntity*>* tabs;
-
 @end
 
 @implementation TabBarModuleInteractor
@@ -39,11 +37,6 @@
     
     [self.output manageNewTabs: [[NSArray alloc] initWithObjects: tab, tab2, nil]];
 }
-
-
-
-
-
 
 
 @end

@@ -15,23 +15,8 @@
 #import "AuthorizationModuleRouter.h"
 #import "ModuleFactory.h"
 
-// protocols
-#import "AuthorizationModuleInput.h"
-#import "AuthorizationModuleOutput.h"
-#import "ModuleFactoryProtocol.h"
-
 
 @implementation AuthorizationModuleAssembly
-
-
-//- (instancetype)init {
-//    self = [super init];
-//    if (self) {
-//        NSLog(@"  ---  AuthorizationModuleAssembly instantiated  ---  ");
-//    }
-//    return self;
-//}
-
 
 - (UIStoryboard *)authStoryBoardWithName: (NSString *)name {
     
@@ -66,18 +51,6 @@
                             }];
 }
 
-// UI FROM CODE
-//- (AuthorizationModuleViewController*)view {
-//
-//    return [TyphoonDefinition withClass: [AuthorizationModuleViewController class]
-//                          configuration: ^(TyphoonDefinition *definition) {
-//
-//                              // inject presenter as view output
-//                              [definition injectProperty: @selector(output)
-//                                                    with: [self presenter]];
-//                          }];
-//}
-
 - (AuthorizationModuleInteractor*)authInteractor {
     
     return [TyphoonDefinition withClass: [AuthorizationModuleInteractor class]
@@ -100,7 +73,7 @@
                               // inject interactor into presenter
                               // inject router into presenter
                               [definition injectProperty: @selector(view)
-                                                    with: [self authViewWithStoryBoard]]; // UI WITH STORYBOARDS
+                                                    with: [self authViewWithStoryBoard]];
                               [definition injectProperty: @selector(interactor)
                                                     with: [self authInteractor]];
                               [definition injectProperty: @selector(router)
@@ -115,7 +88,7 @@
                               
                               // inject view as router action handler
                               [definition injectProperty: @selector(transitionHandler)
-                                                    with: [self authViewWithStoryBoard]]; // UI WITH STORYBOARDS
+                                                    with: [self authViewWithStoryBoard]];
                               
                               // inject module factory
                                [definition injectProperty: @selector(moduleFactory)

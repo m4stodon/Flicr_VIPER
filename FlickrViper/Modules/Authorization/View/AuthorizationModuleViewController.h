@@ -11,13 +11,9 @@
 @import UIKit;
 #import "AuthorizationModuleViewInput.h"
 #import "FlickrViperTransitionHandlerProtocol.h"
-
-
-@protocol AuthorizationModuleViewOutput;
+#import "AuthorizationModuleViewOutput.h"
 
 
 @interface AuthorizationModuleViewController : UIViewController <AuthorizationModuleViewInput, FlickrViperTransitionHandlerProtocol>
-
 @property (nonatomic, strong) id<AuthorizationModuleViewOutput> output;
-
 @end

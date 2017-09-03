@@ -8,8 +8,6 @@
 
 
 #import "AuthorizationModuleViewController.h"
-#import "AuthorizationModuleViewOutput.h"
-#import "TabEntity.h"
 
 
 @interface AuthorizationModuleViewController() <UITextFieldDelegate>
@@ -25,9 +23,6 @@
 
 @implementation AuthorizationModuleViewController
 
-- (void)pushVC:(UIViewController *)viewController {
-    [self presentViewController: viewController animated: true completion: nil];
-}
 
 #pragma mark - Lifecycle
 
@@ -99,6 +94,15 @@
     [self.output loginWithCredentials: login password: password];
 }
 
+
+#pragma mark - FlickrViperTransitionHandlerProtocol
+
+
+- (void)pushVC:(UIViewController *)viewController {
+    UINavigationController* navigationContainer = [[UINavigationController alloc] initWithRootViewController: viewController];
+    [navigationContainer setNavigationBarHidden: YES animated: NO];
+    [self presentViewController: navigationContainer animated: true completion: nil];
+}
 
 
 @end

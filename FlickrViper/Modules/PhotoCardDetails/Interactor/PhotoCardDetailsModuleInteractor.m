@@ -26,4 +26,12 @@
     self.entity = entity;
 }
 
+
+#pragma mark - PhotoCardDetailsModuleInteractorOutput
+
+
+- (PhotoCardEntity *)getPhotoCardEntity {
+    return self.entity;
+}
+
 @end

@@ -15,8 +15,6 @@
 
 
 @interface AuthorizationModuleInteractor : NSObject <AuthorizationModuleInteractorInput>
-
-@property (weak, nonatomic)   id<ModuleFactoryProtocol>        moduleFactory;
-@property (strong, nonatomic) id<AuthorizationModuleInteractorOutput> output;
-
+@property (weak, nonatomic) id<ModuleFactoryProtocol>        moduleFactory;
+@property (weak, nonatomic) id<AuthorizationModuleInteractorOutput> output;
 @end

@@ -12,7 +12,6 @@
 
 @implementation PhotoCardEntity
 
-
 - (instancetype)initWith: (UIImage*)image text: (NSString*)text descriptionText: (NSString*)description {
     self = [super init];
     if (self) {
@@ -22,7 +21,5 @@
     }
     return self;
 }
-
-
 
 @end

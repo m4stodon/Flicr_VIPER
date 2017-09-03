@@ -8,7 +8,6 @@
 
 
 #import "TabBarModuleViewController.h"
-#import "TabBarModuleViewOutput.h"
 #import "TabEntity.h"
 
 

@@ -8,8 +8,8 @@
 
 
 #import "AuthorizationModuleInteractor.h"
-#import "TabEntity.h"
-#import "FlickrViperTransitionHandlerProtocol.h"
+#import "AuthorizationModuleInteractorOutput.h"
+#import "ModuleFactoryProtocol.h"
 
 
 @implementation AuthorizationModuleInteractor

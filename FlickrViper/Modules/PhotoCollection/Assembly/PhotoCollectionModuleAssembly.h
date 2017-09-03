@@ -10,12 +10,9 @@
 @import Foundation;
 @import Typhoon;
 
-
 @class PhotoCollectionModulePresenter;
 
 
-@interface PhotoCollectionModuleAssembly : TyphoonAssembly
-
+@interface PhotoCollectionModuleAssembly: TyphoonAssembly
 - (PhotoCollectionModulePresenter*)photoCollectionPresenter;
-
 @end

@@ -13,9 +13,7 @@
 #import "ModuleFactoryProtocol.h"
 
 
-@interface AuthorizationModuleRouter : NSObject <AuthorizationModuleRouterInput>
-
+@interface AuthorizationModuleRouter: NSObject <AuthorizationModuleRouterInput>
 @property (nonatomic, weak) id<FlickrViperTransitionHandlerProtocol> transitionHandler;
 @property (nonatomic, weak) id<ModuleFactoryProtocol> moduleFactory;
-
 @end

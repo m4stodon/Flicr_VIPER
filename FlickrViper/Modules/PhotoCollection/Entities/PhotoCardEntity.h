@@ -12,11 +12,9 @@
 
 
 @interface PhotoCardEntity : NSObject
-
 @property (strong, nonatomic) UIImage* photo;
 @property (strong, nonatomic) NSString* label;
 @property (strong, nonatomic) NSString* descriptionText;
-
+//
 - (instancetype)initWith: (UIImage*)image text: (NSString*)text descriptionText: (NSString*)description;
-
 @end

@@ -7,9 +7,6 @@
 //
 
 
-@import Foundation;
-
-
 @protocol PhotoCollectionModuleOutput <NSObject>
 
 

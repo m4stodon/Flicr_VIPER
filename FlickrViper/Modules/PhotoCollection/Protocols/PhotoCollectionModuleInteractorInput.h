@@ -7,11 +7,8 @@
 //
 
 
-@import Foundation;
-
-
 @protocol PhotoCollectionModuleInteractorInput <NSObject>
 
-- (void)getTabs;
+- (void)fetchData;
 
 @end

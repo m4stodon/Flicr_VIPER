@@ -10,16 +10,9 @@
 @import Foundation;
 @import Typhoon;
 
-@protocol TabBarModuleInput;
-@protocol TabBarModuleOutput;
-@protocol ModuleFactoryProtocol;
 @class TabBarModulePresenter;
 
 
-@interface TabBarModuleAssembly : TyphoonAssembly
-
-
+@interface TabBarModuleAssembly: TyphoonAssembly
 - (TabBarModulePresenter*)tabBarPresenter;
-
-
 @end

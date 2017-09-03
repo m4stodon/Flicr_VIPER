@@ -13,10 +13,8 @@
 
 
 @interface PhotoCollectionCell : UICollectionViewCell
-
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UILabel *textLabel;
-
+//
 - (void)setupCellWith: (PhotoCardEntity*)photoCard basedOnWidth: (CGFloat)width;
-
 @end

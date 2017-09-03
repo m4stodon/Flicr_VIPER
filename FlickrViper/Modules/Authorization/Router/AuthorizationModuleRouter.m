@@ -8,7 +8,6 @@
 
 
 #import "AuthorizationModuleRouter.h"
-#import "PhotoCollectionModulePresenter.h"
 #import "ModuleFactory.h"
 
 #import "TabBarModuleInput.h"
@@ -22,9 +21,7 @@
 
 
 @interface AuthorizationModuleRouter() <TabBarModuleOutput>
-
 @property (strong, nonatomic) id<TabBarModuleInput> tabBarModule;
-
 @end
 
 
@@ -38,7 +35,7 @@
     // Setup tabs for module
     id<PhotoCollectionModuleInput> photoCollectionModule = [ModuleFactory openPhotoCollectionModuleWithOutputHandler: nil];
     UIViewController* photoCollectionViewController = [photoCollectionModule photoCollectionModuleRootViewController];
-    
+    //
     id<SettingsModuleInput> settingsModule = [ModuleFactory openSettingsModuleWith: nil];
     UIViewController* settingsViewController = [settingsModule settingsModuleRootViewController];
     
